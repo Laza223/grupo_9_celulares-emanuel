@@ -13,18 +13,39 @@
                         <div>
                             <label for="name" class="form-label">Nombre:</label>
                             <input type="text" id="name" name="name" class="form-control" value="<%= user.name %>">
+                            <% if(locals.errors){ %>
+                                <p class="text-danger-error">
+                                    <%= locals?.errors?.name?.msg %>
+                                </p>
+                                <% } else {%>
+                                    <p class="text-danger-error errName"></p>
+                                <% } %>
                         </div>
 
                         <div>
                             <label for="surname" class="form-label">Apellido:</label>
                             <input type="text" id="surname" name="surname" class="form-control"
                                 value="<%= user.surname %>">
+                            <% if(locals.errors){ %>
+                                <p class="text-danger-error">
+                                    <%= locals?.errors?.surname?.msg %>
+                                </p>
+                                <% } else {%>
+                                    <p class="text-danger-error errSurName"></p>
+                                <% } %>
                         </div>
 
                         <div>
                             <label for="phoneNumber" class="form-label">Teléfono:</label>
                             <input type="tel" id="phoneNumber" name="phoneNumber" class="form-control"
                                 value="<%= user.phoneNumber %>">
+                            <% if(locals.errors){ %>
+                                <p class="text-danger-error">
+                                    <%= locals?.errors?.phoneNumber?.msg %>
+                                </p>
+                                <% } else {%>
+                                    <p class="text-danger-error errPhone"></p>
+                                <% } %>
                         </div>
                     </div>
                     <div class="container-file-old-new">
