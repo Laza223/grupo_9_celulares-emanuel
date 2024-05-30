@@ -1,5 +1,184 @@
 [
   {
+    "id": 21,
+    "nombre": "Cif Gatillo Limpiador Vidrios y Superficies Delicadas",
+    "precio": 1199,
+    "categoria": "Limpiadores líquidos",
+    "stock": 200,
+    "imagen": "Cif-limpiador-liquido.jpg",
+    "descripcion": "Cif Bioactive Vidrios & Multiuso es un limpiador líquido para vidrios y superficies delicadas que,gracias a su tecnología, permite una limpieza fácil y brinda un brillo impecable a tus superficies dejándolas libres de vetas y marcas de agua. Este limpiador cuenta con una fragancia biodegradable. La poderosa fórmula de Cif Bioactive Vidrios & Multiuso elimina fácil y rápidamente la suciedad dejando las superficies brillantes, como nuevas. En los cristales, también se acumula una gran cantidad de polvo y humedad, por lo que es importante utilizar una solución específica para limpiar vidrios y secar con un paño de microfibra."
+  },
+  {
+    "id": 22,
+    "nombre": "Cif Bio Active Detergente Frutas Cítricas",
+    "precio": 1950,
+    "categoria": "Detergentes",
+    "stock": 200,
+    "imagen": "BioActiveDetergenteFrutasCítricas.jpg",
+    "descripcion": "El detergente CIF Frutas Cítricas evolucionó y trae su mejor fórmula: ahora más concentrada garantizando un máximo rendimiento. Su nueva fórmula, se mantiene por más tiempo en tu esponja garantizando una espuma de larga duración, para que con menos cantidad de producto puedas lavar muchos más platos. Tiene un X5 Poder Desengrasante, que elimina la grasa difícil, incluso de los plásticos desde la primera pasada, dejando toda tu vajilla limpia y brillante. Además, tiene una nueva y única tecnología BIOACTIVE, que tiene 100% activos biodegradables. El nuevo CIF BIOACTIVE trae una nueva y mejor fragancia, que es también biodegradable y neutraliza los malos olores de toda tu vajilla. La botella del detergente concentrado Cif Frutas Cítricas, está hecha con plástico 100% reciclado y es también 100% reciclable, contribuyendo de este modo con el cuidado del medio ambiente."
+  },
+  {
+    "id": 23,
+    "nombre": "Cif Bio Active Detergente Limón",
+    "precio": 1950,
+    "categoria": "Detergentes",
+    "stock": 200,
+    "imagen": "CifBioActiveDetergenteLimon.jpg",
+    "descripcion": "El detergente CIF Limón evolucionó y trae su mejor fórmula: ahora más concentrada garantizando un máximo rendimiento. Su nueva fórmula, se mantiene por más tiempo en tu esponja garantizando una espuma de larga duración, para que con menos cantidad de producto puedas lavar muchos más platos.Tiene un X5 Poder Desengrasante, que elimina la grasa difícil, incluso de los plásticos desde la primera pasada, dejando toda tu vajilla limpia y brillante. Además, tiene una nueva y única tecnología BIOACTIVE, que tiene 100% activos biodegradables. El nuevo CIF BIOACTIVE trae una nueva y mejor fragancia, que es también biodegradable y neutraliza los malos olores de toda tu vajilla. La botella del detergente concentrado Cif Frutas Cítricas, está hecha con plástico 100% reciclado y es también 100% reciclable, contribuyendo de este modo con el cuidado del medio ambiente."
+  },
+  {
+    "id": 24,
+    "nombre": "Cif Bio Active Detergente Lima",
+    "precio": 1950,
+    "categoria": "Detergentes",
+    "stock": 200,
+    "imagen": "CifBioActiveDetergenteLima.jpg",
+    "descripcion": "El detergente CIF Lima evolucionó y trae su mejor fórmula: ahora más concentrada garantizando un máximo rendimiento. Su nueva fórmula, se mantiene por más tiempo en tu esponja garantizando una espuma de larga duración, para que con menos cantidad de producto puedas lavar muchos más platos. Tiene un X5 Poder Desengrasante, que elimina la grasa difícil, incluso de los plásticos desde la primera pasada, dejando toda tu vajilla limpia y brillante. Además, tiene una nueva y única tecnología BIOACTIVE, que tiene 100% activos biodegradables. El nuevo CIF BIOACTIVE trae una nueva y mejor fragancia, que es también biodegradable y neutraliza los malos olores de toda tu vajilla. La botella del detergente concentrado Cif Frutas Cítricas, está hecha con plástico 100% reciclado y es también 100% reciclable, contribuyendo de este modo con el cuidado del medio ambiente."
+  },
+  {
+    "id": 25,
+    "nombre": "Cif Bio Active Antigrasa Gatillo",
+    "precio": 1700,
+    "categoria": "Detergentes",
+    "stock": 200,
+    "imagen": "CifBioActiveAntigrasaGatillo.jpg",
+    "descripcion": "Cif Bioactive Antigrasa es un desengrasante líquido que con su tecnología y su nueva fórmula brinda una limpieza fácil y permite limpiar con el doble de eficiencia y la mitad del esfuerzo, ayudando a eliminar rápidamente hasta la grasa quemada. Las manchas de grasa no deberían ser un problema cuando existen productos desengrasantes especialmente formulados, tal como el Gatillo Cif Antigrasa, con el cual se pueden obtener excelentes resultados en manchas de grasa acumulada. Además, tiene una fragancia biodegradable y su botella está hecha con plástico 100% reciclado y reciclable. La poderosa fórmula de CIF Antigrasa elimina fácil y rápidamente la suciedad dejando las superficies brillantes, como nuevas. CIF ha sido formulado con materia activa biodegradable."
+  },
+  {
+    "id": 26,
+    "nombre": "Cif Gatillo 2 en 1",
+    "precio": 1700,
+    "categoria": "Detergentes",
+    "stock": 200,
+    "imagen": "CifGatillo2en1.jpg",
+    "descripcion": "Deja las superficies de toda tu casa, inclusive las zonas en contacto con comida, increíblemente limpias. Además, su fórmula sin lavandina, remueve alérgenos y ácaros y elimina el 99,9% de bacterias. Modo de uso: Gire la punta del gatillo de la posición OFF a la posición ON. Aplicar CIF ANTIBACTERIAL 2 EN 1 sobre la superficie a limpiar y luego pasar un paño húmedo. Para garantizar desinfección dejar actuar durante 5 minutos. No es necesario enjuagar salvo en superficies en contacto con alimentos."
+  },
+  {
+    "id": 27,
+    "nombre": "Cif Gel 2 en 1",
+    "precio": 2100,
+    "categoria": "Detergentes",
+    "stock": 200,
+    "imagen": "CifGel2en1.jpg",
+    "descripcion": "Su nueva fórmula traslucida de gel ligero, sin lavandina, limpia rápidamente todas las superficies de tu hogar, dejándolas brillantes sin necesidad de enjuague y sin dejar residuos y, además, elimina 99,9% de bacterias (testeado sobre las bacterias Salmonella Choleraesuis, Staphylococcus Aureus y Escherichia Coli) . CIF GEL 2 EN 1 garantiza una limpieza completa de una manera más práctica y fácil con un solo producto. Modo de uso: Para superficies como Enamel, acero inoxidable, vinilo, vidrio, espejo, cromo, porcelanato, granito, decamel, aplique una pequeña cantidad de CIF GEL 2 EN 1 y luego pase un paño CIF línea ballerina. No es necesario enjuagar (en superficies en contacto con alimentos, enjuague con abundante agua potable) Tiempo de contacto para eliminar 99,999% de bacterias: 30 minutos. NO utilizar en madera, mármol, aluminio, bronce, cobre, metal pintado y linóleo. En superficies delicadas o si tiene dudas, haga una prueba en una pequeña área no visible."
+  },
+  {
+    "id": 28,
+    "nombre": "Cif Gel 2 EN 1 Fresias & Jazmin",
+    "precio": 2100,
+    "categoria": "Detergentes",
+    "stock": 200,
+    "imagen": "Gel2EN1Fresias&Jazmin.jpg",
+    "descripcion": "Su nueva fórmula traslucida de gel ligero, sin lavandina, limpia rápidamente todas las superficies de tu hogar, dejándolas brillantes sin necesidad de enjuague y sin dejar residuos y, además, elimina 99,9% de bacterias (testeado sobre las bacterias Salmonella Choleraesuis, Staphylococcus Aureus y Escherichia Coli) . CIF GEL 2 EN 1 garantiza una limpieza completa de una manera más práctica y fácil con un solo producto. Modo de uso: Para superficies como Enamel, acero inoxidable, vinilo, vidrio, espejo, cromo, porcelanato, granito, decamel, aplique una pequeña cantidad de CIF GEL 2 EN 1 y luego pase un paño CIF línea ballerina. No es necesario enjuagar (en superficies en contacto con alimentos, enjuague con abundante agua potable) Tiempo de contacto para eliminar 99,999% de bacterias: 30 minutos. NO utilizar en madera, mármol, aluminio, bronce, cobre, metal pintado y linóleo. En superficies delicadas o si tiene dudas, haga una prueba en una pequeña área no visible."
+  },
+  {
+    "id": 29,
+    "nombre": "Saphirus Textil Hypnotic Scent",
+    "precio": 2500,
+    "categoria": "Aerosoles",
+    "stock": 70,
+    "imagen": "TextilHypnoticScent.png",
+    "descripcion": "Sofisticada fragancia de carácter único, con notas avainilladas, dulces y almendradas que dan como resultado un aroma sexy y embriagador."
+  },
+  {
+    "id": 30,
+    "nombre": "Saphirus Textil Limón",
+    "precio": 2500,
+    "categoria": "Aerosoles",
+    "stock": 70,
+    "imagen": "textilLimon.png",
+    "descripcion": "Fragancia cítrica verde, muy fresca, con toques de flor de naranja. Excelente difusión y persistencia dejando un aroma limpio y agradable."
+  },
+  {
+    "id": 31,
+    "nombre": "Saphirus Textil Vainilla",
+    "precio": 2500,
+    "categoria": "Aerosoles",
+    "stock": 70,
+    "imagen": "textilVainilla.png",
+    "descripcion": "Deliciosa y difusiva fragancia vainilla que se presenta con chispas de Jazmín y Orquídea que le agregan suavidad y clase a la composición. La nota de clavo de olor en su cuerpo da entrada a sus notas de fondo que se caracterizan por su persistencia, formado por Vainillina, Cumarina y almizcle."
+  },
+  {
+    "id": 32,
+    "nombre": "Saphirus Textil Flores Silvestres",
+    "precio": 2500,
+    "categoria": "Aerosoles",
+    "stock": 70,
+    "imagen": "textilfloresSilvestres.png",
+    "descripcion": "Delicioso mix de flores silvestres que, junto a las frescas notas de salida de naranja y melocotón, descansan en un fondo oriental aterciopelado."
+  },
+  {
+    "id": 33,
+    "nombre": "Limpiador Aromatizante Frescura de Lavanda",
+    "precio": 1150,
+    "categoria": "Limpiadores líquidos",
+    "stock": 70,
+    "imagen": "poettLavanda.png",
+    "descripcion": "Poett® es un limpiador diluible versátil que proporciona una limpieza completa y dejará tu hogar oliendo delicioso. Es ideal para limpiar fácilmente todas las superficies, ya sea diluido o aplicado directamente, llenando tu hogar de una fragancia deliciosa y duradera."
+  },
+  {
+    "id": 34,
+    "nombre": "Limpiador Aromatizante Flores de Primavera",
+    "precio": 1150,
+    "categoria": "Limpiadores líquidos",
+    "stock": 70,
+    "imagen": "poettPrimavera.png",
+    "descripcion": "Poett® es un limpiador diluible versátil que proporciona una limpieza completa y dejará tu hogar oliendo delicioso. Es ideal para limpiar fácilmente todas las superficies, ya sea diluido o aplicado directamente, llenando tu hogar de una fragancia deliciosa y duradera."
+  },
+  {
+    "id": 35,
+    "nombre": "Limpiador Aromatizante Suavidad de algodón",
+    "precio": 1150,
+    "categoria": "Limpiadores líquidos",
+    "stock": 70,
+    "imagen": "poettAlgoodon.png",
+    "descripcion": "Poett® es un limpiador diluible versátil que proporciona una limpieza completa y dejará tu hogar oliendo delicioso. Es ideal para limpiar fácilmente todas las superficies, ya sea diluido o aplicado directamente, llenando tu hogar de una fragancia deliciosa y duradera."
+  },
+  {
+    "id": 36,
+    "nombre": "Limpiador Aromatizante Música en Primavera",
+    "precio": 1150,
+    "categoria": "Limpiadores líquidos",
+    "stock": 70,
+    "imagen": "poettPrimaveraGreen.png",
+    "descripcion": "Poett® es un limpiador diluible versátil que proporciona una limpieza completa y dejará tu hogar oliendo delicioso. Es ideal para limpiar fácilmente todas las superficies, ya sea diluido o aplicado directamente, llenando tu hogar de una fragancia deliciosa y duradera."
+  },
+  {
+    "id": 37,
+    "nombre": "Jabón en barra Dove Leche de Coco",
+    "precio": 1300,
+    "categoria": "Jabones",
+    "stock": 70,
+    "imagen": "doveJabon1.png",
+    "descripcion": "Este jabón cuenta con 1/4 de crema hidratante y agentes de limpieza suaves que ayudan a proteger la hidratación de la piel. Dove deja la piel más suave, bien cuidada y radiante Puede usarse diariamente en la cara, el cuerpo y las manos Ningún otro jabón en barra común hidrata la piel mejor que Dove ¿Sabías que con los productos correctos para el cuidado del cuerpo podés lograr ese tiempo propio de todos los días que uno necesita para relajarse y nutrir la piel dejandola más bonita? Si te preguntás cómo hacer para tener una piel suave junto con un momento de relax en la ducha todos los días, recomendamos probar el Jabón Dove Delicious Care Leche de Coco. Dentro de la línea Dove Delicious Care, hecha para calmar y nutrir su piel, este jabón ofrece el delicioso perfume de leche de coco con pétalos de jazmín."
+  },
+  {
+    "id": 38,
+    "nombre": "Jabón en barra Dove Agua Micelar",
+    "precio": 1300,
+    "categoria": "Jabones",
+    "stock": 70,
+    "imagen": "doveJabon3.png",
+    "descripcion": "Con 1/4 crema hidratante y limpiadores suaves, Dove ayuda a proteger la hidratación natural de la piel. Dove no reseca la piel como lo hacen los jabones comunes. Ningún jabón en barra común hidrata la piel mejor que Dove. Puede usarse diariamente en la cara, las manos y el cuerpo. Deja la piel suave, bien cuidada y con aspecto saludable.Esta barra de belleza combina el poder limpiador micelar con 1/4 de crema humectante. Durante el baño, pequeñas micelas se forman alrededor de los factores estresantes ambientales diarios, como la suciedad y las impurezas, limpiándolas suavemente dejando tu piel suave. Producto cosmético sin acción terapéutica."
+  },
+  {
+    "id": 39,
+    "nombre": "Jabón en barra Dove Granada y Verbena",
+    "precio": 1300,
+    "categoria": "Jabones",
+    "stock": 70,
+    "imagen": "doveJabon2.png",
+    "descripcion": "Con 1/4 crema hidratante y limpiadores suaves, Dove ayuda a proteger la hidratación natural de la piel Dove no reseca la piel como lo hacen los jabones comunes Fragancia refrescante de granada y verbena Ningún jabón en barra común hidrata la piel mejor que Dove. Puede usarse diariamente en la cara, las manos y el cuerpo Deja la piel suave, bien cuidada y con aspecto saludable El Jabón Dove Go Fresh Granada y Verbena logra un suave despertar para tu piel. ¿Te preguntás cómo refrescar su piel y mantenerla suave y nutrida al mismo tiempo? El baño es un buen momento para empezar el día con más frescura, y por eso creamos el Jabón Dove Go Fresh Granada y Verbena. Con 1/4 de crema hidratante y un limpiador suave, este jabón ayuda a reponer nutrientes naturales de la piel que se pierden durante el baño y ayuda a la piel a mantener su hidratación natural, además de traer una sensación de frescura con el aroma vívido de la granada. "
+  },
+  {
+    "id": 40,
+    "nombre": "Barra de Belleza Original",
+    "precio": 1300,
+    "categoria": "Jabones",
+    "stock": 70,
+    "imagen": "doveJabonClassic.png",
+    "descripcion": "Dove es diferente. No reseca la piel como el resto de los jabones comunes ya que posee un 1/4 de crema humectante e ingredientes de origen natural que limpian y humectan tu piel. Además es hipoalergénico y suave hasta con las pieles más delicadas. Las barras de belleza Dove tienen pH neutro y están aprobadas por PETA ya que Dove no testea en animales en ninguna parte del mundo. "
+  },  {
     "id": 1,
     "nombre": "Detergente If",
     "precio": 599,

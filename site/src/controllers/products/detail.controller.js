@@ -1,4 +1,6 @@
+const { where, Op } = require('sequelize');
 const db = require('../../db/models');
+
 
 module.exports = async (req, res) => {
     try {
@@ -6,7 +8,19 @@ module.exports = async (req, res) => {
 
         let product = await db.Product.findByPk(id, { include: "category" })
 
+        const idCategory = product.categoryId
+
         const categories = await db.Category.findAll();
+
+        const productsBotBar = await db.Product.findAll({
+            where: {
+                [Op.and]: [
+                  { categoryId: idCategory },
+                  { id: { [Op.not]: id } }
+                ]
+              },
+            limit: 8
+        })
 
         let user = null;
         if (req.session.userLogin) {
@@ -14,7 +28,7 @@ module.exports = async (req, res) => {
             user = await db.User.findByPk(id, { include: "address" });
         }
 
-        res.render('./products/newDetailProduct.ejs', { user, product, categories });
+        res.render('./products/newDetailProduct.ejs', { user, product, categories, productsBotBar });
 
     } catch (error) {
         console.error("Error al cargar el home:", error);

@@ -42,7 +42,7 @@
                 <section class="section-products">
                     <% products.forEach(product=> { %>
                         <div class="clean-product">
-                            <div class="img-container"><a href="productos/detalle/<%= product.id%>">
+                            <div class="img-container"><a href="/productos/detalle/<%= product.id%>">
                                     <img src="/images/products/<%= product.image%>" alt="Article">
                                 </a></div>
                             <div class="description-container">
@@ -51,7 +51,7 @@
                                 </h2>
                                 <h3> $<%= product.price%>
                                 </h3>
-                                <a id="cart-action" href="#">Añadir al carrito</a>
+                                <a id="cart-action" href="/productos/detalle/<%= product.id%>">Ver Producto</a>
                             </div>
                         </div>
                         <% }) %>

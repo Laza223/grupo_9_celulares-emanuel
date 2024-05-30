@@ -2,7 +2,9 @@ const db = require("../../db/models")
 
 module.exports = async (req, res) => {
   try {
-    const products = await db.Product.findAll();
+    const products = await db.Product.findAll({
+      limit: 18
+    });
     const categories = await db.Category.findAll();
 
     let user = null;

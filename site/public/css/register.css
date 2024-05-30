@@ -96,6 +96,7 @@
        right: 0px;
        text-align: start;
        white-space: nowrap;
+       overflow: hidden;
    }
 
    .text-danger-errorForm {

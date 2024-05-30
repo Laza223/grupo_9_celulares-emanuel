@@ -8,54 +8,104 @@
 
 
             <main class="detail-main">
-                <nav class="nav-categories">
-                    <a id="backButton"><i class="fa-solid fa-arrow-left"></i> Volver</a>
-                    <div>
-                        <a href="/">Home <i class="fa-solid fa-chevron-right"></i></a>
-                        <a href="/productos/categoria/<%=product.categoryId %>">
-                            <%= product.category.name %> <i class="fa-solid fa-chevron-right"></i>
-                        </a>
+                <div class="detail-container">
+                    <nav class="nav-categories">
+                        <a id="backButton"><i class="fa-solid fa-arrow-left"></i> Volver</a>
+                        <div>
+                            <a href="/">Home <i class="fa-solid fa-chevron-right"></i></a>
+                            <a href="/productos/categoria/<%=product.categoryId %>">
+                                <%= product.category.name %> <i class="fa-solid fa-chevron-right"></i>
+                            </a>
+                        </div>
+                    </nav>
+                    <div class="product-img-container">
+                        <div class="images-gallery">
+                            <img id="galeria" src="/images/products/<%= product.image %>" alt="">
+                            <nav class="nav-gallery">
+                                <ul>
+                                    <li><a onclick="cargarfoto('/images/products/<%= product.image %>')"><img
+                                                src="/images/products/<%= product.image %>" alt=""></a></li>
+                                    <!-- <li><a onclick="cargarfoto('/images/products/cif-trasero.jpg',0)"><img
+                                                src="/images/products/cif-trasero.jpg" alt=""></a></li> -->
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="info-product">
+                            <h2>
+                                <%= product.name %>
+                            </h2>
+                            <h2>$ <%= product.price %>
+                            </h2>
+                            <button class="cart-button">Agregar al carrito <i
+                                    class="fa-solid fa-cart-shopping"></i></button>
+                        </div>
+                        <span class="product-description">
+                            <h2>Descripcion del producto</h2>
+                            <p>
+                                <%= product.description %>
+                            </p>
+                        </span>
                     </div>
-                </nav>
-                <div class="product-container">
-                    <div class="images-gallery">
-                        <img id="galeria" src="/images/products/<%= product.image %>" alt="">
-                        <nav class="nav-gallery">
-                            <ul>
-                                <li><a onclick="cargarfoto('/images/products/<%= product.image %>')"><img
-                                            src="/images/products/<%= product.image %>" alt=""></a></li>
-                                <li><a onclick="cargarfoto('/images/products/cif-trasero.jpg',0)"><img
-                                            src="/images/products/cif-trasero.jpg" alt=""></a></li>
-                            </ul>
-                        </nav>
+                    <div class="carouselBottom">
                     </div>
                 </div>
-                <h2>
-                    <%= product.name %>
-                </h2>
-                <h2>$ <%= product.price %>
-                </h2>
-                <button class="cart-button">Agregar al carrito <i class="fa-solid fa-cart-shopping"></i></button>
-                <!-- <div class="div-fondo">
-                    <div class="card-container">
-                        <h2>Seleccionaste</h2>
-                        <div class="div-img"><img src="/images/products/<%#= product.image %>" alt="Esponja">
+
+
+                <div class="carousel-container">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <% productsBotBar.forEach(prodBotBar=> { %>
+                                <div class="swiper-slide">
+                                    <div class="clean-product-swiper">
+                                        <div class="img-container-swiper">
+                                            <a href="/productos/detalle/<%= prodBotBar.id%>">
+                                                <img src="/images/products/<%= prodBotBar.image%>" alt="Article">
+                                            </a>
+                                        </div>
+                                        <div class="description-container-swiper">
+                                            <h2>
+                                                <%= prodBotBar.name%>
+                                            </h2>
+                                            <h3> $<%= prodBotBar.price%>
+                                            </h3>
+                                            <a id="cart-action-swiper" href="/productos/detalle/<%= prodBotBar.id%>">Ver Producto</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <% }) %>
                         </div>
-                        <b>
-                            <%#= product.name %>
-                        </b>
-                        <h5> $<%#= product.price%>
-                        </h5>
-                        <p> Categoría: <%#= product.category.name%>
-                        </p>
-                    
-                        <div class="cart-button">
-                            <div class="agregar"><button class="carrito"> AGREGAR AL CARRITO</button> 
-                                <i class="fa-solid fa-cart-shopping"></i>
-                            </div>
-                        </div>
+                        <div class="swiper-pagination"></div>
                     </div>
-                </div> -->
+                </div>
+
+                <!-- Swiper JS -->
+                <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+                <!-- Initialize Swiper -->
+                <script>
+                    var swiper = new Swiper(".mySwiper", {
+                        slidesPerView: 1,
+                        spaceBetween: 10,
+                        pagination: {
+                            el: ".swiper-pagination",
+                            clickable: true,
+                        },
+                        breakpoints: {
+                            426: {
+                                slidesPerView: 1,
+                                spaceBetween: 0,
+                            },
+                            769: {
+                                slidesPerView: 2,
+                                spaceBetween: 0,
+                            },
+                            1024: {
+                                slidesPerView: 4,
+                                spaceBetween: 0,
+                            }
+                        }
+                    });
+                </script>
                 <script>
                     document.getElementById('backButton').addEventListener('click', function () {
                         window.history.back()
