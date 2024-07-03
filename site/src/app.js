@@ -1,9 +1,14 @@
+require("dotenv").config();
 var createError = require('http-errors');
 const cors = require('cors');
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+const passport = require("passport")
+const { configServiceLogInGoogle } = require("./service/google.service");
+
+
 const methodOverride = require('method-override');  //PUT Y DELETE HABILITADO
 const insertDataLocals = require('./middlewares/insertDataLocals');
 const insertDataLocalsMsgRegister = require('./middlewares/insertDataLocalsMsgRegister');
@@ -27,6 +32,9 @@ const adminRoutes = require("./routes/admin.routes");
 const apiRoutes = require("./routes/api.routes")
 const cartApiRoutes = require("./routes/api/cart.api.routes")
 
+var app = express();
+configServiceLogInGoogle();
+
 
 var app = express();
 
@@ -44,6 +52,10 @@ app.use(session({
   resave: false, 
   saveUninitialized: false 
 }));
+
+app.use(passport.initialize())
+app.use(passport.session())
+
 app.use(checkUser)
 app.use(checkUserCookies)
 app.use(insertDataLocals)
