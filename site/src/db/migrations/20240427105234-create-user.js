@@ -13,6 +13,8 @@ module.exports = {
       socialId: {
         type: Sequelize.STRING
       },
+      provider: { 
+        type: Sequelize.STRING },
       name: {
         type: Sequelize.STRING
       },

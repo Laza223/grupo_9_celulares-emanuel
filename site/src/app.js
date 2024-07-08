@@ -75,7 +75,7 @@ app.use("/productos", productRoutes);
 app.use("/admin", adminRoutes);
 app.use("/api", apiRoutes);
 app.use("/api/cart", cartApiRoutes)
-
+http://localhost:3030/iniciar/authentication/google/callback
 app.use((req,res, next) => {
   res.status(404).render("error")
 })

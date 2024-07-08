@@ -26,8 +26,8 @@ function Home() {
     }, [])
 
     const prods = products.products || []
-    console.log(products.products);
-    console.log(cartData);
+    /* console.log(products.products); */
+   /*  console.log(cartData); */
 
 
     return (

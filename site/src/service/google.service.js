@@ -1,9 +1,9 @@
 const Strategy = require("passport-google-oauth").OAuth2Strategy;
 const passport = require("passport");
 
-const clientID ="550919172697-832fpeh4csgn82b2jimfsl2f55b8p3mb.apps.googleusercontent.com"
-const clientSecret = "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"
-const callbackURL = "http://localhost:3030/iniciar/authentication/google/callback"
+const clientID =process.env['GOOGLE_CLIENT_ID']
+const clientSecret = process.env['GOOGLE_SECRET_ID']
+const callbackURL = process.env['GOOGLE_CALLBACK']
 
 console.log(clientID,clientSecret,callbackURL)
 
