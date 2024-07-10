@@ -2,8 +2,8 @@ const db = require('../../../db/models')
 
 module.exports = async (req, res) => {
     try {
+        
         const categorys = await db.Category.findAll()
-        console.log(categorys);
 
         return res.status(200).json({
             data: categorys

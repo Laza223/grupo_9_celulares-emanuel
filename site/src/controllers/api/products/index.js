@@ -4,7 +4,7 @@ module.exports = {
     productList: require("./productList.controller.js"),
     productDetail: require("./productDetail.controller.js"),
     categorysList: require("./categoryList.controller.js"),
-    editProduct: require("./editProduct.controller")
+    editProduct: require("./editProduct.controller"),
 }
 
 

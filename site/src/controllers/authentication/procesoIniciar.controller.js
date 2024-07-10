@@ -1,6 +1,7 @@
 const db = require("../../db/models")
 const bcrypt = require("bcryptjs");
 const { validationResult, fileValidationError } = require("express-validator");
+const jwt = require("json-web-token")
 
 module.exports = async (req, res) => {
   
@@ -24,6 +25,8 @@ module.exports = async (req, res) => {
       roleAdmin = true
     }
 
+     /* const token = jwt.sign({},"",{}); */
+
     req.session.userLogin = {
       id,
       name,
@@ -31,7 +34,8 @@ module.exports = async (req, res) => {
       email,
       avatar,
       address,
-      roleAdmin
+      roleAdmin,
+      token: "adsjkhbashbjkdasjkhbdashbjkadsadhbjksdjhbkasdkjashbdbashjkdasjhkdbkajhsdbjkhasbjkdhasbjkhdbjakshbdjkhasbdjkhasbdkjabdkjabsdkjha"
     }
 
     return res.redirect("/")

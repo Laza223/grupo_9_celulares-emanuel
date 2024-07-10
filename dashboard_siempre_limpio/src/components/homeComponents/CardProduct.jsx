@@ -10,7 +10,7 @@ import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
-function cardProduct({ title, description, img, id }) {
+function cardProduct({ title, description, img, id, price }) {
 
   const { cartData, fetchCartData } = useContext(GlobalContext)
 
@@ -32,10 +32,11 @@ function cardProduct({ title, description, img, id }) {
 
   return (
     <Card sx={{ height: 550, maxWidth: '350px', marginBottom: '40px' }}>
+      
       <CardMedia
         sx={{ height: 350 }}
         image={img}
-        title="green iguana"
+        title={title}
       />
       <CardContent>
         <Typography sx={{ height: 30, overflow: 'hidden' }} gutterBottom variant="h5" component="div">
@@ -47,7 +48,7 @@ function cardProduct({ title, description, img, id }) {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small" >Ver producto</Button>
+        <Button size="small" >${price}</Button>
         <Button size="small" onClick={handleCLickAddCart}>Add to Cart</Button>
       </CardActions>
     </Card>

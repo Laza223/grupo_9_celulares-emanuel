@@ -10,7 +10,7 @@ const insertDataLocalsMsgRegister = require('./middlewares/insertDataLocalsMsgRe
 const partials = require("express-partials")
 const session = require("express-session")
 const bodyParser = require('body-parser')
-
+require('dotenv').config()
 
 
 
@@ -24,8 +24,10 @@ const cartRoutes = require("./routes/cart.routes");
 const homeRoutes = require("./routes/home.routes");
 const productRoutes = require("./routes/products.routes");
 const adminRoutes = require("./routes/admin.routes");
-const apiRoutes = require("./routes/api.routes")
+const apiRoutes = require("./routes/api/api.routes")
 const cartApiRoutes = require("./routes/api/cart.api.routes")
+const apiAuthRoutes = require("./routes/api/api.authentication.routes");
+const { log } = require('console');
 
 
 var app = express();
@@ -63,6 +65,7 @@ app.use("/productos", productRoutes);
 app.use("/admin", adminRoutes);
 app.use("/api", apiRoutes);
 app.use("/api/cart", cartApiRoutes)
+app.use("/api/auth", apiAuthRoutes)
 
 app.use((req,res, next) => {
   res.status(404).render("error")

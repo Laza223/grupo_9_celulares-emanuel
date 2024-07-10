@@ -8,6 +8,10 @@ module.exports = (req, res) =>{
         );
     }
     catch (error) {
+        res.status(500).json({
+            error: "Error interno del servidor",
+            message: error.message
+        });
         console.log(error);
     }
 };

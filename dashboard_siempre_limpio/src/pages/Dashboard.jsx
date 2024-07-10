@@ -3,11 +3,15 @@ import ContainCategoryCards from '../components/ContainCategoryCards';
 import TotalsCards from '../components/TotalsCards';
 import { useEffect, useState } from 'react';
 import CircularProgress from '@mui/material/CircularProgress';
+import { useParams } from 'react-router-dom';
 
 function Dashboard() {
   let [totalProducts, setTotalProducts] = useState({ count: 0, products: [] });
   let [categorys, setCategorys] = useState([]);
   let [totalUsers, setUsers] = useState({ count: 0, users: [] });
+  // const {token} = useParams()
+
+  // setToken(token)
 
   const urlApiProducts = 'http://localhost:3030/api/products';
   const urlApiCategorys = 'http://localhost:3030/api/categorys';

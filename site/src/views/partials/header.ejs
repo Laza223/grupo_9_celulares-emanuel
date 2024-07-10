@@ -34,7 +34,8 @@
               </div>
               <div class="action-buttons">
                 <% if (locals.userLogin?.roleAdmin===true) { %>
-                  <a href="/admin/dashboard/productos">Panel Admin</a>
+                  <a href="/admin/dashboard/productos">Panel Admin Avanzado</a>
+                  <a href="http://localhost:5173/admin/products?token=<%= locals.userLogin?.token %>">Panel Admin Basico</a>
                   <% } else { %>
                     <a href="/perfil">Ver Perfil</a>
                     <% } %>
