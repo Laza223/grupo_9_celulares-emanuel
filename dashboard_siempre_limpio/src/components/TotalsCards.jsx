@@ -1,6 +1,6 @@
 import React from 'react'
 
-function TotalsCards({color, title, count, icon}) {
+function TotalsCards({ color, title, count, icon }) {
     return (
         <div className="col-md-4 mb-4">
             <div className={`card border-left-${color} shadow h-100 py-2`}>

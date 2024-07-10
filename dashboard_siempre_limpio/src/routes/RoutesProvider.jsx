@@ -3,6 +3,7 @@ import Root from '../pages/Root'
 import Dashboard from "../pages/Dashboard";
 import Products from "../pages/Products";
 import EditProduct from '../pages/EditProduct'
+import CreateProduct from '../pages/CreateProduct';
 import Users from "../pages/Users";
 import Home from "../pages/Home"
 import Cart from "../pages/Cart";
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
             {
                 path: "products/edit/:id",
                 element: <EditProduct />
+            },
+            {
+                path: "products/create",
+                element: <CreateProduct />
             },
             {
                 path: "users",

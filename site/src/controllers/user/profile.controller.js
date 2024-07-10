@@ -12,7 +12,7 @@ module.exports = async (req, res) => {
         include: "address"
        
     })
-
+    console.log(user.avatar)
     return res.render("user/userProfile",{user, categories})
    } catch(error){
     console.error("Error al cargar el usuario:", error);

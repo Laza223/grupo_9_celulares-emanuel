@@ -7,7 +7,6 @@ module.exports = async (req, res) => {
 
         const { name, price, categoryId, stock, description, id, image } = req.body
         const imageUpdate = req.file ? req.file.filename : "product-default.jpg";
-        console.log(image);
 
         await db.Product.update(
             {
@@ -23,7 +22,6 @@ module.exports = async (req, res) => {
             })
 
         const pathImage = path.join(__dirname, '../../../public/images/products/', image)
-        console.log(pathImage);
 
         if (imageUpdate != "product-default.jpg" && image != "product-default.jpg") {
             if (fs.existsSync(pathImage)) {

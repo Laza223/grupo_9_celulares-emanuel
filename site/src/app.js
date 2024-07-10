@@ -1,9 +1,14 @@
+require("dotenv").config();
 var createError = require('http-errors');
 const cors = require('cors');
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+const passport = require("passport")
+const { configServiceLogInGoogle } = require("./service/google.service");
+
+
 const methodOverride = require('method-override');  //PUT Y DELETE HABILITADO
 const insertDataLocals = require('./middlewares/insertDataLocals');
 const insertDataLocalsMsgRegister = require('./middlewares/insertDataLocalsMsgRegister');
@@ -29,6 +34,9 @@ const cartApiRoutes = require("./routes/api/cart.api.routes")
 const apiAuthRoutes = require("./routes/api/api.authentication.routes");
 const { log } = require('console');
 
+var app = express();
+configServiceLogInGoogle();
+
 
 var app = express();
 
@@ -46,6 +54,10 @@ app.use(session({
   resave: false, 
   saveUninitialized: false 
 }));
+
+app.use(passport.initialize())
+app.use(passport.session())
+
 app.use(checkUser)
 app.use(checkUserCookies)
 app.use(insertDataLocals)
@@ -67,6 +79,7 @@ app.use("/api", apiRoutes);
 app.use("/api/cart", cartApiRoutes)
 app.use("/api/auth", apiAuthRoutes)
 
+http://localhost:3030/iniciar/authentication/google/callback
 app.use((req,res, next) => {
   res.status(404).render("error")
 })

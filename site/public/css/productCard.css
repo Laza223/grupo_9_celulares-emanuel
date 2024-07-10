@@ -1,0 +1,127 @@
+/* Tarjeta de producto */
+
+.product-card {
+    display: inline-block;
+    width: 300px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+}
+
+.product-card .product-title {
+    font-weight: 700;
+    font-family: serif !important;
+}
+
+.product-card .product-description {
+    font-weight: 400;
+    padding: 0;
+    font-family: serif !important;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.product-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    transition: transform 0.3s;
+}
+
+.product-details {
+    padding: 20px;
+}
+
+.product-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-actions button {
+    flex: 1;
+    margin: 0 5px;
+}
+
+
+.product-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.product-description {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 16px;
+}
+
+.product-price {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-right: 12px;
+    font-family: serif !important;
+}
+
+.discount {
+    font-size: 12px;
+    color: #7f8c8d;
+    text-decoration: line-through;
+}
+
+.product-actions button {
+    display: inline-block;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.view-product {
+    background-color: #2980b9;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 15px;
+    border: 1px solid black;
+}
+
+.add-to-cart {
+    background-color: #27ae60;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid black;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+.read-more {
+    font-size: 14px;
+    color: #2980b9;
+    cursor: pointer;
+}
+
+.read-less {
+    font-size: 14px;
+    color: #2980b9;
+    cursor: pointer;
+}
+
+.truncated-description {
+    font-family: serif !important;
+}
