@@ -13,18 +13,23 @@
                 </div>
                 <% if(locals.products.length> 0){ %>
                     <section class="section-products">
+
                         <% products.forEach(product=> { %>
-                            <div class="clean-product">
-                                <div class="img-container"><a href="/productos/detalle/<%= product.id%>">
-                                        <img src="/images/products/<%= product.image%>" alt="Article">
-                                    </a></div>
-                                <div class="description-container">
-                                    <h2>
-                                        <%= product.name%>
-                                    </h2>
-                                    <h3> $<%= product.price%>
-                                    </h3>
-                                    <a id="cart-action" href="#">Añadir al carrito</a>
+                            <div class="product-card">
+                                <div class="product-image">
+                                    <img src="/images/products/<%= product.image%>" alt="<%= product.name%>">
+                                </div>
+                                <div class="product-details">
+                                    <h3 class="product-title"><%= product.name%></h3>
+                                    <p class="product-description"><%= product.description %></p>
+                                    <div class="product-price">
+                                        <span class="price">$<%= product.price %></span>
+                                        <span class="discount">$9999.99</span>
+                                    </div>
+                                    <div class="product-actions">
+                                        <a href="/productos/detalle/<%= product.id%>" class="view-product">Ver Producto</a>
+                                        <a href="/productos/detalle/<%= product.id%>" class="add-to-cart">Agregar al carrito</a>
+                                    </div>
                                 </div>
                             </div>
                             <% }) %>
@@ -40,7 +45,7 @@
 
                     <%- include("../partials/footer") %>
                         <%- include("../partials/scripts") %>
-                            <script src="./js/togglePassword.js"></script>
+                        <script src="./js/togglePassword.js"></script>
     </body>
 
 </html>
