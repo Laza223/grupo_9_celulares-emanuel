@@ -2,7 +2,7 @@ const db = require('../../db/models')
 const { body } = require("express-validator");
 const { compareSync } = require('bcryptjs')
 const path = require('path')
-const regExPass = /^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$/;
+const regExPass = /(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$/;
 const expReg = /.png|.jpg|.jpeg|.webp|.gif/i;
 
 
@@ -42,7 +42,7 @@ const fieldPassword = body("password")
     .withMessage("El campo contraseña es requerido!").bail()
     .isLength({ min: 8, max: 16 })
     .withMessage("Longitud invalida!").bail()
-    .matches(regExPass).withMessage("Contraseña debe contener al menos una mayuscula una minuscula y un  numero!")
+    .matches(regExPass).withMessage("Contraseña debe contener al menos una mayuscula una minuscula y un  numero!").bail()
 
 
 // VALIDACION LOGIN //

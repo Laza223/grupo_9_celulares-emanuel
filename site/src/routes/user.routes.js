@@ -10,7 +10,10 @@ router.get("/", userController.profile)
 
 
 router.get("/editar", userController.edit)
-router.put("/editar", uploadUser.single("avatar", {name : "avatar"}), profileValidation, userController.update)
+router.put("/editar",
+     uploadUser.single("avatar", {name : "avatar"}),
+     profileValidation, 
+     userController.update)
 
 
 

@@ -9,7 +9,8 @@
             <main class="bg-user-perfil">
                 <div class="perfil">
                     <div class="perfil-container">
-                        <div class="user-img"> <img src="/images/users/<%=user.avatar %>" alt=""></div>
+                        <div class="user-img"> <img src="<%= /http/.test(user.avatar) ? user.avatar : '/images/users/${user.avatar}'%>" alt="" ></div>
+                        <% console.log(user.avatar) %>
                         <div class="user-info">
                             <h2 class="user-name-info">
                                 <%= user.name + " " + user.surname %>

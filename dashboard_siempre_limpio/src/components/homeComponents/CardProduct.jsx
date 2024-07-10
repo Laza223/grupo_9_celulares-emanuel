@@ -48,7 +48,7 @@ function cardProduct({ title, description, img, id }) {
       </CardContent>
       <CardActions>
         <Button size="small" >Ver producto</Button>
-        <Button size="small" onClick={handleCLickAddCart}>Add to Cart</Button>
+        <Button size="small" onClick={handleCLickAddCart}>Agregar al carrito</Button>
       </CardActions>
     </Card>
   )
