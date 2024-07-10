@@ -75,7 +75,7 @@
 
 
             <div>
-              <img src="/images/users/<%= user.avatar %>" width="400px">
+              <img src="<%= /http/.test(user.avatar) ? user.avatar : '/images/users/' + user.avatar%>"  width="400px">
             </div>
 
           </div>

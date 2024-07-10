@@ -33,7 +33,7 @@
                     <div class="container-file-old-new">
                         <div class="mb-3">
                             <label class="form-label">Foto de perfil actual</label>
-                            <img src="/images/users/<%= user.avatar %>" width="300px">
+                            <img src="<%= /http/.test(user.avatar) ? user.avatar : '/images/users/' + user.avatar%>"  width="300px">
                         </div>
 
                         <div class="mb-3">
