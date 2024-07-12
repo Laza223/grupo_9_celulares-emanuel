@@ -9,6 +9,8 @@ module.exports = {
     update: require("./update.controller.js"),
     delete: require("./delete.controller.js"),
     destroy: require("./destroy.controller.js"),
-    restore: require("./restore.controller.js")
+    restore: require("./restore.controller.js"),
+    orderList: require("./orderList.controller.js"),
+    orderDetail: require("./orderDetail.controller.js")
   };
     

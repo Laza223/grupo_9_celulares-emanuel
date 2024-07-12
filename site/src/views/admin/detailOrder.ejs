@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("../partials/head", { title: "Productos en database" }) %>
+
+
+
+    <body class="dashboard-body">
+        <%- include("./navBar") %>
+            <main class="admin-main-list">
+                <div class="admin-header-list">
+                    <div class="admin-header-list-title">
+                        <h3></h3>
+                        <h2>Orden N° <%= order.id %></h2>
+                    </div>
+                </div>
+
+                <div class="admin-user-details">
+                    <h3>Detalles</h3>
+                    <div id="admin-user-info">
+          
+                 
+          
+          
+                        <div class="col-md-6">
+                     
+                        </div>
+          
+          
+          
+                    </div>
+          
+          
+                    <h3>Datos de la compra</h3>
+          
+                    <div class="container-admin-user-address">
+                      <div class="admin-user-address">
+          
+                     
+                      </div>
+                    </div>
+                  </div>
+
+            </main>
+
+
+            <%- include("../partials/scripts") %>
+
+    </body>
+
+</html>

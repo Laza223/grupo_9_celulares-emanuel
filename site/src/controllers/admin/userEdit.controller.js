@@ -7,8 +7,6 @@ module.exports = async (req, res) => {
             { roleId: req.body.role }, { where: { id: id } }
         )
 
-
-
         const user = await db.User.findByPk(id, {
 
             include: [{
@@ -23,6 +21,13 @@ module.exports = async (req, res) => {
         })
 
         const roles = await db.Role.findAll()
+
+        if(user.roleId !== 2) {
+            req.session.userLogin.roleAdmin = false
+            console.log("No tenes permisos")
+            res.redirect("/")
+          }
+
         const message = `El rol del usuario se ha actualizado correctamente a "${user.role.name}" `
         return res.render("admin/userDetail", { message, user, roles })
 
