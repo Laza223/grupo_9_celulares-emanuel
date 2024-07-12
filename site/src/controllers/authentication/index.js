@@ -8,5 +8,6 @@ module.exports = {
   register: require("./register.controller"),
   registerProcess: require("./registerProcess.controller"),
   loginAndRegister: require("./loginAndRegister.controller"),
-  loginAndRegisterGoogle: require("./loginAndRegisterGoogle.controller")
+  loginAndRegisterGoogle: require("./loginAndRegisterGoogle.controller"),
+  loginAndRegisterFacebook: require("./lognAndRegisterFacebook.controller")
 };
