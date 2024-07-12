@@ -1,0 +1,141 @@
+.footer {
+    background-color: #203C58;
+    font-size: 0.8rem;
+    font-weight: 100;
+    color: white;
+}
+
+.contenedor_footer {
+    display: flex;
+    width: 100%;
+    margin-top:15px;
+}
+
+.contacto {
+    display: flex;
+    width: 100%;
+    list-style: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.icono {
+    display: flex;
+    gap: 0.7rem;
+}
+
+
+.resaltado {
+    font-weight: 800;
+    }
+#suscripcion{
+    display: flex;
+    flex-direction: column;
+  
+}
+#titulo_suscripcion{
+  
+    background-color: #00A538;
+    border-radius: 20px 0 ;
+    width:220px;
+    font-size: 0.8rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:0px
+}
+#suscripcion{
+text-align: center;
+}
+
+ #formulario_suscripcion_input{
+    border-top-right-radius: 20px ;
+    width:220px;
+    justify-content: center;
+    align-items: center;
+
+ }
+
+
+
+#suscripcion {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#titulo_suscripcion {
+    background-color: #00A538;
+    border-radius: 0px 25px 0px 0px;
+    width: 250px;
+    font-size: 11px;
+    padding: 5px;
+    text-align: center;
+    font-weight: normal;
+    margin: 0;
+}
+
+#suscripcion {
+    text-align: center;
+}
+
+#formulario_suscripcion_input {
+    width: 290px;
+    border-radius: 0px 30px;
+    border: none;
+    padding: 5px;
+    padding-left: 50px;
+}
+
+
+
+#legales {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0px 4px 20px;
+}
+
+#legales a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#legales p {
+    width: 100%;
+    color: white;
+    font-size: 11px;
+    text-align: center;
+}
+
+#arrepentimiento {
+    padding: 30px;
+    text-align: center;
+}
+
+#arrepentimiento p {
+    font-size: 19px;
+    font-weight: 100;
+}
+
+#arrepentimiento a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+@media (max-width:460px){
+    .contacto{
+        display: none;
+    }
+
+    .contenedor_footer{
+        justify-content: center;
+    }
+
+    #suscripcion{
+        margin-top:-10px
+    }
+}

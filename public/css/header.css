@@ -1,0 +1,590 @@
+#ubicacion-gps {
+    font-size: smaller;
+    display: none;
+}
+
+
+header .logo-ubicacion {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    height: 60px;
+}
+
+.user-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-a {
+    text-decoration: none;
+}
+
+.user-button {
+    background-color: var(--azulOscuro);
+    width: 40px;
+    height: 40px;
+    color: lightgray;
+    font-size: 24px;
+    border: none;
+    border-radius: 8px;
+    margin: 0px 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.user-button i {
+    text-decoration: none;
+}
+
+.div-button a {
+    text-decoration: none;
+    text-align: center;
+}
+
+.div-button h3 {
+    display: none;
+}
+.apt {
+    display: none;
+}
+
+
+
+
+header .fa-location-dot {
+    position: relative;
+    margin-right: 20px;
+    color: rgb(54, 179, 91);
+}
+
+.seccion-nav-bar {
+    background-color: var(--turquesa);
+    display: flex;
+    padding: 5px;
+    height: 45px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.barra-busqueda {
+    width: 80%;
+    height: 100%;
+    margin-right: 10px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border: solid 2px var(--azulOscuro);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.barra-busqueda form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.barra-busqueda button {
+    font-size: 20px;
+    position: absolute;
+    right: 5px;
+    top: 0px;
+    border: none;
+    height: 100%;
+    background-color: transparent;
+    color: var(--azulOscuro);
+}
+
+header form {
+    width: 100%;
+}
+
+header form input {
+    width: 100%;
+    border: none;
+    padding: 4px;
+}
+
+
+
+
+
+
+
+.div-button {
+    cursor: pointer;
+}
+
+
+.user-button {
+    display: flex;
+    align-items: center;
+}
+
+#label-text {
+    display: none;
+}
+
+.div-button label {
+    color: aliceblue;
+    display: flex;
+    margin-bottom: 0px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+
+.perfil-box-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    background-color: white;
+    z-index: 3;
+    top: 60px;
+    right: 0px;
+    overflow: hidden;
+    transition: height 0.5s ease;
+    box-shadow: 8px 8px 6px 0px rgba(0, 0, 0, 0.5);
+}
+
+.apt:checked + .perfil-box-container{
+    height: 400px;
+}
+
+.avatar-img {
+    width: 100%;
+    height: 140px;
+    background: linear-gradient(to top, white 50%, var(--azulOscuro) 50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar-img img {
+    width: auto;
+    height: 95%;
+    border: solid white 8px;
+    border-radius: 50%;
+}
+
+.user-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.user-name-info {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+}
+
+#user-email-info {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--azulOscuro);
+}
+
+.addres-info {
+    text-align: center;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.action-buttons a {
+    background-color: var(--turquesa);
+    width: 35%;
+    height: 80%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.burguer-menu {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+}
+
+.burguer-menu i {
+    font-size: 28px;
+}
+
+.burguer-activate {
+    display: none;
+}
+
+.burguer-activate:checked+.movile-nav {
+    height: max-content;
+    width: max-content;
+    z-index: 2;
+}
+
+.movile-nav {
+    background-color: var(--azulOscuro);
+    height: 0px;
+    overflow: hidden;
+    width: 0px;
+    position: absolute;
+    top: 44px;
+    left: 0px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    border-radius: 0px 0px 10px 10px;
+    padding: initial;
+    padding-top: 10px;
+}
+
+.movile-nav h2 {
+    border-bottom: solid 2px var(--turquesa);
+    width: 100%;
+    text-align: start;
+    font-family: sans-serif;
+    padding-left: 5px;
+}
+
+.movile-nav li {
+    padding: 2px;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-bottom: solid 2px var(--turquesa);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.movile-nav li:hover {
+    background-color: var(--turquesa);
+}
+
+
+.movile-nav li a {
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+
+.menu-lista {
+    display: none
+}
+
+.div-header-a {
+    display: none;
+}
+
+.iconos .fa-user {
+    display: none;
+}
+
+.iconos li {
+    display: none;
+}
+
+.iconos .fa-bell {
+    margin-right: 5px;
+}
+
+.iconos p {
+    display: none;
+}
+
+
+
+.iconos {
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    display: none;
+}
+
+@media (min-width:768px) {
+
+    .seccion-nav-bar {
+        height: 55px;
+    }
+
+    .user-actions {
+        width: max-content;
+    }
+
+    #label-text {
+        display: flex;
+        margin: 0px 5px;
+    }
+
+    .perfil-box-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-sizing: border-box;
+        position: absolute;
+        width: 300px;
+        height: 0px;
+        background-color: white;
+        z-index: 3;
+        top: 42px;
+        right: -100px;
+        overflow: hidden;
+        transition: height 0.5s ease;
+        border-radius: 18px;
+        box-shadow: 8px 8px 6px 0px rgba(0, 0, 0, 0.5);
+    }
+    
+
+    .div-button {
+        background-color: var(--azulOscuro);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 8px;
+        margin-right: 10px;
+        position: relative;
+    }
+
+    .div-button h3 {
+        color: aliceblue;
+        display: flex;
+        margin-bottom: 0px;
+        padding-left: 8px;
+        font-size: 22px;
+    }
+}
+
+
+@media(min-width:1024px) {
+    header .logo-ubicacion {
+        padding: 12px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+    }
+
+    .seccion-nav-bar {
+        height: 0px;
+        padding: 0px;
+    }
+
+    .burguer-menu {
+        display: none;
+    }
+
+    header .barra-busqueda {
+        width: 45%;
+        height: 35px;
+        position: absolute;
+        top: -57px;
+        left: 25%;
+        margin: initial;
+    }
+
+    .barra-busqueda button i {
+        font-size: 22px;
+    }
+
+    header form input {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .lupa {
+        font-size: 30px;
+
+    }
+
+    .iconos {
+        font-size: 20px;
+        justify-content: flex-end;
+    }
+
+    .iconos li a {
+        font-size: 16px;
+    }
+
+
+    .div-button {
+        position: relative;
+        cursor: pointer;
+    }
+
+    #label-text {
+        display: flex;
+    }
+
+    .user-button {
+        display: flex;
+        align-items: center;
+    }
+
+    .div-button label {
+        color: aliceblue;
+        display: flex;
+        margin-bottom: 0px;
+        padding-left: 8px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    
+    .perfil-box-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-sizing: border-box;
+        position: absolute;
+        width: 350px;
+        height: 0px;
+        background-color: white;
+        z-index: 3;
+        top: 42px;
+        right: -100px;
+        overflow: hidden;
+        transition: height 0.5s ease;
+        border-radius: 18px;
+        box-shadow: 8px 8px 6px 0px rgba(0, 0, 0, 0.5);
+    }
+    
+    .apt:checked + .perfil-box-container{
+        height: 450px;
+    }
+
+    .avatar-img {
+        width: 100%;
+        height: 140px;
+        background: linear-gradient(to top, white 50%, var(--azulOscuro) 50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .avatar-img img {
+        width: auto;
+        height: 95%;
+        border: solid white 8px;
+        border-radius: 50%;
+    }
+    
+    .user-info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .user-name-info {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: black;
+    }
+
+    #user-email-info {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: var(--azulOscuro);
+    }
+    
+    .addres-info {
+        text-align: center;
+    }
+
+    .action-buttons {
+        display: flex;
+        justify-content: space-around;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .action-buttons a {
+        background-color: var(--turquesa);
+        width: 35%;
+        height: 80%;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        font-size: 18px;
+    }
+
+    .action-buttons a:hover {
+        background-color: var(--azulOscuro);
+        transition: background-color 0.3s;
+    }
+
+    .menu-lista {
+        background-color: var(--turquesa);
+        display: flex;
+        justify-content: space-evenly;
+        padding: 10px;
+        margin-bottom: 0px;
+        list-style: none;
+        border-bottom: solid 2px var(--azulOscuro);
+    }
+
+    .menu-lista li a {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+    }
+
+
+    .div-header-a {
+        font-size: 12px;
+        width: 25%;
+        height: 50px;
+        display: flex;
+    }
+
+    .div-header-a a {
+        font-weight: bold;
+        color: white;
+        font-size: 15px;
+    }
+
+    #ubicacion-gps {
+
+        display: flex;
+
+        margin-right: 10px;
+    }
+
+}
