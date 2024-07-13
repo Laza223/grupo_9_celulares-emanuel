@@ -217,6 +217,16 @@
     .img-tip img {
         width: 100%;
     }
+
+    .view-product:hover {
+        color: white;
+        text-decoration: none;
+    }
+
+    .add-to-cart:hover {
+        color: white;
+        text-decoration: none;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -288,7 +298,7 @@
         color: black;
         padding: 10px;
         border-radius: 20px 20px 0px 20px;
-        box-shadow: 1px 1px 10px  #000000;
+        box-shadow: 1px 1px 10px #000000;
         display: none;
         animation: fade-in 0.5s ease-in-out;
         font-weight: bold;

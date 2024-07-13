@@ -23,10 +23,9 @@ header .logo-ubicacion {
 }
 
 .user-button {
-    background-color: var(--turquesa);
     width: 40px;
     height: 40px;
-    color: lightgray;
+    color: gray;
     font-size: 24px;
     border: none;
     border-radius: 8px;
@@ -35,9 +34,7 @@ header .logo-ubicacion {
     justify-content: center;
 }
 
-.user-button i {
-    text-decoration: none;
-}
+.user-button i {}
 
 .div-button a {
     text-decoration: none;
@@ -348,7 +345,6 @@ header form input {
 
 
     .div-button {
-        background-color: var(--turquesa);
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -359,16 +355,32 @@ header form input {
         transition: all 0.3s ease;
     }
 
-    .div-button:hover {
-        background-color: var(--azulOscuro);
-    }
-
     .div-button h3 {
-        color: aliceblue;
+        color: #858796;
         display: flex;
         padding-left: 8px;
         font-size: 22px;
         margin: 0;
+    }
+
+    .div-button h3:hover {
+        color: #6c6c6d;
+        text-decoration: none;
+    }
+
+   
+
+    .user-button:hover{
+        text-decoration: none;
+        color: #6c6c6d;
+    }
+
+    .button-a:hover{
+        text-decoration: none !important;
+    }
+
+    .div-button a:hover{
+        text-decoration: none;
     }
 }
 
@@ -434,7 +446,6 @@ header form input {
     .user-button {
         display: flex;
         align-items: center;
-        background-color: rgba(1, 1, 1, 0);
     }
 
     .div-button label {
