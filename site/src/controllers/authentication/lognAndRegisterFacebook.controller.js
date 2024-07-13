@@ -3,6 +3,12 @@ const db = require("../../db/models");
 module.exports = async (req, res) => {
 
     try {
+
+
+    const {
+      user: { _json, provider },
+    } = req.session.passport;
+ 
         const { user } = req.session.passport;
         req.session.userLogin = {
           id: user.id,

@@ -33,7 +33,7 @@
              
               <% users.forEach(user=> { %>
                 <tr class="records">
-                  <td><img src="<%= /http/.test(user.avatar) ? user.avatar : '/images/users/' + user.avatar%>"  alt="" width="40px" height="40px" ></td>
+                  <td><img src="<%= /http/.test(user.avatar) ? user.avatar : '/images/users/' + user.avatar %>"  alt="" width="40px" height="40px" ></td>
                   <td scope="row">
                     <%= user.name %>  <%= user.surname %>
                   </td>

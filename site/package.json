@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "concurrently \"node ./src/bin/www\" \" npm run dev --prefix ../dashboard_siempre_limpio/\"",
+    "start": "concurrently \"nodemon ./src/bin/www\" \" npm run dev --prefix ../dashboard_siempre_limpio/\"",
     "dev": "nodemon ./src/bin/www",
     "db:reset": "sequelize db:drop & sequelize db:create & sequelize db:migrate & sequelize db:seed:all"
   },

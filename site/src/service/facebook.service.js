@@ -11,6 +11,9 @@ const strategy = new FacebookStrategy({
   profileFields: ["id", "emails", "name", "photos"] 
 }, async (accessToken, refreshToken, profile, done) => {
   try {
+    console.log(profile)
+
+
     const [user, created] = await db.User.findOrCreate({
       where: { socialId: profile.id },
       defaults: {
@@ -18,7 +21,8 @@ const strategy = new FacebookStrategy({
         provider: 'facebook',
         name: profile.name.givenName,
         surname: profile.name.familyName,
-
+        email: profile._json.email,
+        avatar: profile._json.picture[0]
       }
     });
     return done(null, user);
