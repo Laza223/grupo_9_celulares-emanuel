@@ -1,15 +1,21 @@
+require("dotenv").config();
 var createError = require('http-errors');
+const cors = require('cors');
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+const passport = require("passport")
+const { configServiceLogInGoogle } = require("./service/google.service");
+
+
 const methodOverride = require('method-override');  //PUT Y DELETE HABILITADO
 const insertDataLocals = require('./middlewares/insertDataLocals');
 const insertDataLocalsMsgRegister = require('./middlewares/insertDataLocalsMsgRegister');
 const partials = require("express-partials")
 const session = require("express-session")
 const bodyParser = require('body-parser')
-
+require('dotenv').config()
 
 
 
@@ -23,12 +29,19 @@ const cartRoutes = require("./routes/cart.routes");
 const homeRoutes = require("./routes/home.routes");
 const productRoutes = require("./routes/products.routes");
 const adminRoutes = require("./routes/admin.routes");
-const apiRoutes = require("./routes/api.routes")
+const apiRoutes = require("./routes/api/api.routes")
+const cartApiRoutes = require("./routes/api/cart.api.routes")
+const apiAuthRoutes = require("./routes/api/api.authentication.routes");
+const { log } = require('console');
+
+var app = express();
+configServiceLogInGoogle();
 
 
 var app = express();
 
 app.use(methodOverride('_method'));
+app.use(cors());
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -41,6 +54,10 @@ app.use(session({
   resave: false, 
   saveUninitialized: false 
 }));
+
+app.use(passport.initialize())
+app.use(passport.session())
+
 app.use(checkUser)
 app.use(checkUserCookies)
 app.use(insertDataLocals)
@@ -59,7 +76,10 @@ app.use("/carrito", cartRoutes);
 app.use("/productos", productRoutes);
 app.use("/admin", adminRoutes);
 app.use("/api", apiRoutes);
+app.use("/api/cart", cartApiRoutes)
+app.use("/api/auth", apiAuthRoutes)
 
+http://localhost:3030/iniciar/authentication/google/callback
 app.use((req,res, next) => {
   res.status(404).render("error")
 })

@@ -1,16 +1,18 @@
 const multer = require("multer");
 const path = require("path")
 
+
 const imageFileFilter = (req, file, cb) => {
 
   const filetypes = /jpeg|jpg|png|gif/;
   const mimetype = filetypes.test(file.mimetype);
   const extname = filetypes.test(path.extname(file.originalname).toLowerCase());
+  /* const lengthImage = req.file?.imageProduct?.length; */
 
-  if (mimetype && extname) {
+  if (mimetype && extname /* && lengthImage !== 0 */) {
     return cb(null, true);
   } else {
-    cb(new Error("Solo se permiten imagenes!"));
+    cb(null, false);
   }
 };
 

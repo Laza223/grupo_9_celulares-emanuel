@@ -4,8 +4,8 @@
     "nombre": "Cif Gatillo Limpiador Vidrios y Superficies Delicadas",
     "precio": 1199,
     "categoria": "Limpiadores líquidos",
-    "stock": 200,
-    "imagen": "Cif-limpiador-liquido.jpg",
+    "quantity": 200,
+    "imagen": "Cif-limpiador-liquido.png",
     "descripcion": "Cif Bioactive Vidrios & Multiuso es un limpiador líquido para vidrios y superficies delicadas que,gracias a su tecnología, permite una limpieza fácil y brinda un brillo impecable a tus superficies dejándolas libres de vetas y marcas de agua. Este limpiador cuenta con una fragancia biodegradable. La poderosa fórmula de Cif Bioactive Vidrios & Multiuso elimina fácil y rápidamente la suciedad dejando las superficies brillantes, como nuevas. En los cristales, también se acumula una gran cantidad de polvo y humedad, por lo que es importante utilizar una solución específica para limpiar vidrios y secar con un paño de microfibra."
   },
   {
@@ -13,8 +13,8 @@
     "nombre": "Cif Bio Active Detergente Frutas Cítricas",
     "precio": 1950,
     "categoria": "Detergentes",
-    "stock": 200,
-    "imagen": "BioActiveDetergenteFrutasCítricas.jpg",
+    "quantity": 200,
+    "imagen": "BioActiveDetergenteFrutasCítricas.png",
     "descripcion": "El detergente CIF Frutas Cítricas evolucionó y trae su mejor fórmula: ahora más concentrada garantizando un máximo rendimiento. Su nueva fórmula, se mantiene por más tiempo en tu esponja garantizando una espuma de larga duración, para que con menos cantidad de producto puedas lavar muchos más platos. Tiene un X5 Poder Desengrasante, que elimina la grasa difícil, incluso de los plásticos desde la primera pasada, dejando toda tu vajilla limpia y brillante. Además, tiene una nueva y única tecnología BIOACTIVE, que tiene 100% activos biodegradables. El nuevo CIF BIOACTIVE trae una nueva y mejor fragancia, que es también biodegradable y neutraliza los malos olores de toda tu vajilla. La botella del detergente concentrado Cif Frutas Cítricas, está hecha con plástico 100% reciclado y es también 100% reciclable, contribuyendo de este modo con el cuidado del medio ambiente."
   },
   {
@@ -22,8 +22,8 @@
     "nombre": "Cif Bio Active Detergente Limón",
     "precio": 1950,
     "categoria": "Detergentes",
-    "stock": 200,
-    "imagen": "CifBioActiveDetergenteLimon.jpg",
+    "quantity": 200,
+    "imagen": "CifBioActiveDetergenteLimon.png",
     "descripcion": "El detergente CIF Limón evolucionó y trae su mejor fórmula: ahora más concentrada garantizando un máximo rendimiento. Su nueva fórmula, se mantiene por más tiempo en tu esponja garantizando una espuma de larga duración, para que con menos cantidad de producto puedas lavar muchos más platos.Tiene un X5 Poder Desengrasante, que elimina la grasa difícil, incluso de los plásticos desde la primera pasada, dejando toda tu vajilla limpia y brillante. Además, tiene una nueva y única tecnología BIOACTIVE, que tiene 100% activos biodegradables. El nuevo CIF BIOACTIVE trae una nueva y mejor fragancia, que es también biodegradable y neutraliza los malos olores de toda tu vajilla. La botella del detergente concentrado Cif Frutas Cítricas, está hecha con plástico 100% reciclado y es también 100% reciclable, contribuyendo de este modo con el cuidado del medio ambiente."
   },
   {
@@ -31,8 +31,8 @@
     "nombre": "Cif Bio Active Detergente Lima",
     "precio": 1950,
     "categoria": "Detergentes",
-    "stock": 200,
-    "imagen": "CifBioActiveDetergenteLima.jpg",
+    "quantity": 200,
+    "imagen": "CifBioActiveDetergenteLima.png",
     "descripcion": "El detergente CIF Lima evolucionó y trae su mejor fórmula: ahora más concentrada garantizando un máximo rendimiento. Su nueva fórmula, se mantiene por más tiempo en tu esponja garantizando una espuma de larga duración, para que con menos cantidad de producto puedas lavar muchos más platos. Tiene un X5 Poder Desengrasante, que elimina la grasa difícil, incluso de los plásticos desde la primera pasada, dejando toda tu vajilla limpia y brillante. Además, tiene una nueva y única tecnología BIOACTIVE, que tiene 100% activos biodegradables. El nuevo CIF BIOACTIVE trae una nueva y mejor fragancia, que es también biodegradable y neutraliza los malos olores de toda tu vajilla. La botella del detergente concentrado Cif Frutas Cítricas, está hecha con plástico 100% reciclado y es también 100% reciclable, contribuyendo de este modo con el cuidado del medio ambiente."
   },
   {
@@ -40,8 +40,8 @@
     "nombre": "Cif Bio Active Antigrasa Gatillo",
     "precio": 1700,
     "categoria": "Detergentes",
-    "stock": 200,
-    "imagen": "CifBioActiveAntigrasaGatillo.jpg",
+    "quantity": 200,
+    "imagen": "CifBioActiveAntigrasaGatillo.png",
     "descripcion": "Cif Bioactive Antigrasa es un desengrasante líquido que con su tecnología y su nueva fórmula brinda una limpieza fácil y permite limpiar con el doble de eficiencia y la mitad del esfuerzo, ayudando a eliminar rápidamente hasta la grasa quemada. Las manchas de grasa no deberían ser un problema cuando existen productos desengrasantes especialmente formulados, tal como el Gatillo Cif Antigrasa, con el cual se pueden obtener excelentes resultados en manchas de grasa acumulada. Además, tiene una fragancia biodegradable y su botella está hecha con plástico 100% reciclado y reciclable. La poderosa fórmula de CIF Antigrasa elimina fácil y rápidamente la suciedad dejando las superficies brillantes, como nuevas. CIF ha sido formulado con materia activa biodegradable."
   },
   {
@@ -49,8 +49,8 @@
     "nombre": "Cif Gatillo 2 en 1",
     "precio": 1700,
     "categoria": "Detergentes",
-    "stock": 200,
-    "imagen": "CifGatillo2en1.jpg",
+    "quantity": 200,
+    "imagen": "CifGatillo2en1.png",
     "descripcion": "Deja las superficies de toda tu casa, inclusive las zonas en contacto con comida, increíblemente limpias. Además, su fórmula sin lavandina, remueve alérgenos y ácaros y elimina el 99,9% de bacterias. Modo de uso: Gire la punta del gatillo de la posición OFF a la posición ON. Aplicar CIF ANTIBACTERIAL 2 EN 1 sobre la superficie a limpiar y luego pasar un paño húmedo. Para garantizar desinfección dejar actuar durante 5 minutos. No es necesario enjuagar salvo en superficies en contacto con alimentos."
   },
   {
@@ -58,8 +58,8 @@
     "nombre": "Cif Gel 2 en 1",
     "precio": 2100,
     "categoria": "Detergentes",
-    "stock": 200,
-    "imagen": "CifGel2en1.jpg",
+    "quantity": 200,
+    "imagen": "CifGel2en1.png",
     "descripcion": "Su nueva fórmula traslucida de gel ligero, sin lavandina, limpia rápidamente todas las superficies de tu hogar, dejándolas brillantes sin necesidad de enjuague y sin dejar residuos y, además, elimina 99,9% de bacterias (testeado sobre las bacterias Salmonella Choleraesuis, Staphylococcus Aureus y Escherichia Coli) . CIF GEL 2 EN 1 garantiza una limpieza completa de una manera más práctica y fácil con un solo producto. Modo de uso: Para superficies como Enamel, acero inoxidable, vinilo, vidrio, espejo, cromo, porcelanato, granito, decamel, aplique una pequeña cantidad de CIF GEL 2 EN 1 y luego pase un paño CIF línea ballerina. No es necesario enjuagar (en superficies en contacto con alimentos, enjuague con abundante agua potable) Tiempo de contacto para eliminar 99,999% de bacterias: 30 minutos. NO utilizar en madera, mármol, aluminio, bronce, cobre, metal pintado y linóleo. En superficies delicadas o si tiene dudas, haga una prueba en una pequeña área no visible."
   },
   {
@@ -67,8 +67,8 @@
     "nombre": "Cif Gel 2 EN 1 Fresias & Jazmin",
     "precio": 2100,
     "categoria": "Detergentes",
-    "stock": 200,
-    "imagen": "Gel2EN1Fresias&Jazmin.jpg",
+    "quantity": 200,
+    "imagen": "Gel2EN1Fresias&Jazmin.png",
     "descripcion": "Su nueva fórmula traslucida de gel ligero, sin lavandina, limpia rápidamente todas las superficies de tu hogar, dejándolas brillantes sin necesidad de enjuague y sin dejar residuos y, además, elimina 99,9% de bacterias (testeado sobre las bacterias Salmonella Choleraesuis, Staphylococcus Aureus y Escherichia Coli) . CIF GEL 2 EN 1 garantiza una limpieza completa de una manera más práctica y fácil con un solo producto. Modo de uso: Para superficies como Enamel, acero inoxidable, vinilo, vidrio, espejo, cromo, porcelanato, granito, decamel, aplique una pequeña cantidad de CIF GEL 2 EN 1 y luego pase un paño CIF línea ballerina. No es necesario enjuagar (en superficies en contacto con alimentos, enjuague con abundante agua potable) Tiempo de contacto para eliminar 99,999% de bacterias: 30 minutos. NO utilizar en madera, mármol, aluminio, bronce, cobre, metal pintado y linóleo. En superficies delicadas o si tiene dudas, haga una prueba en una pequeña área no visible."
   },
   {
@@ -76,7 +76,7 @@
     "nombre": "Saphirus Textil Hypnotic Scent",
     "precio": 2500,
     "categoria": "Aerosoles",
-    "stock": 70,
+    "quantity": 70,
     "imagen": "TextilHypnoticScent.png",
     "descripcion": "Sofisticada fragancia de carácter único, con notas avainilladas, dulces y almendradas que dan como resultado un aroma sexy y embriagador."
   },
@@ -85,7 +85,7 @@
     "nombre": "Saphirus Textil Limón",
     "precio": 2500,
     "categoria": "Aerosoles",
-    "stock": 70,
+    "quantity": 70,
     "imagen": "textilLimon.png",
     "descripcion": "Fragancia cítrica verde, muy fresca, con toques de flor de naranja. Excelente difusión y persistencia dejando un aroma limpio y agradable."
   },
@@ -94,7 +94,7 @@
     "nombre": "Saphirus Textil Vainilla",
     "precio": 2500,
     "categoria": "Aerosoles",
-    "stock": 70,
+    "quantity": 70,
     "imagen": "textilVainilla.png",
     "descripcion": "Deliciosa y difusiva fragancia vainilla que se presenta con chispas de Jazmín y Orquídea que le agregan suavidad y clase a la composición. La nota de clavo de olor en su cuerpo da entrada a sus notas de fondo que se caracterizan por su persistencia, formado por Vainillina, Cumarina y almizcle."
   },
@@ -103,7 +103,7 @@
     "nombre": "Saphirus Textil Flores Silvestres",
     "precio": 2500,
     "categoria": "Aerosoles",
-    "stock": 70,
+    "quantity": 70,
     "imagen": "textilfloresSilvestres.png",
     "descripcion": "Delicioso mix de flores silvestres que, junto a las frescas notas de salida de naranja y melocotón, descansan en un fondo oriental aterciopelado."
   },
@@ -112,7 +112,7 @@
     "nombre": "Limpiador Aromatizante Frescura de Lavanda",
     "precio": 1150,
     "categoria": "Limpiadores líquidos",
-    "stock": 70,
+    "quantity": 70,
     "imagen": "poettLavanda.png",
     "descripcion": "Poett® es un limpiador diluible versátil que proporciona una limpieza completa y dejará tu hogar oliendo delicioso. Es ideal para limpiar fácilmente todas las superficies, ya sea diluido o aplicado directamente, llenando tu hogar de una fragancia deliciosa y duradera."
   },
@@ -121,7 +121,7 @@
     "nombre": "Limpiador Aromatizante Flores de Primavera",
     "precio": 1150,
     "categoria": "Limpiadores líquidos",
-    "stock": 70,
+    "quantity": 70,
     "imagen": "poettPrimavera.png",
     "descripcion": "Poett® es un limpiador diluible versátil que proporciona una limpieza completa y dejará tu hogar oliendo delicioso. Es ideal para limpiar fácilmente todas las superficies, ya sea diluido o aplicado directamente, llenando tu hogar de una fragancia deliciosa y duradera."
   },
@@ -130,7 +130,7 @@
     "nombre": "Limpiador Aromatizante Suavidad de algodón",
     "precio": 1150,
     "categoria": "Limpiadores líquidos",
-    "stock": 70,
+    "quantity": 70,
     "imagen": "poettAlgoodon.png",
     "descripcion": "Poett® es un limpiador diluible versátil que proporciona una limpieza completa y dejará tu hogar oliendo delicioso. Es ideal para limpiar fácilmente todas las superficies, ya sea diluido o aplicado directamente, llenando tu hogar de una fragancia deliciosa y duradera."
   },
@@ -139,7 +139,7 @@
     "nombre": "Limpiador Aromatizante Música en Primavera",
     "precio": 1150,
     "categoria": "Limpiadores líquidos",
-    "stock": 70,
+    "quantity": 70,
     "imagen": "poettPrimaveraGreen.png",
     "descripcion": "Poett® es un limpiador diluible versátil que proporciona una limpieza completa y dejará tu hogar oliendo delicioso. Es ideal para limpiar fácilmente todas las superficies, ya sea diluido o aplicado directamente, llenando tu hogar de una fragancia deliciosa y duradera."
   },
@@ -148,7 +148,7 @@
     "nombre": "Jabón en barra Dove Leche de Coco",
     "precio": 1300,
     "categoria": "Jabones",
-    "stock": 70,
+    "quantity": 70,
     "imagen": "doveJabon1.png",
     "descripcion": "Este jabón cuenta con 1/4 de crema hidratante y agentes de limpieza suaves que ayudan a proteger la hidratación de la piel. Dove deja la piel más suave, bien cuidada y radiante Puede usarse diariamente en la cara, el cuerpo y las manos Ningún otro jabón en barra común hidrata la piel mejor que Dove ¿Sabías que con los productos correctos para el cuidado del cuerpo podés lograr ese tiempo propio de todos los días que uno necesita para relajarse y nutrir la piel dejandola más bonita? Si te preguntás cómo hacer para tener una piel suave junto con un momento de relax en la ducha todos los días, recomendamos probar el Jabón Dove Delicious Care Leche de Coco. Dentro de la línea Dove Delicious Care, hecha para calmar y nutrir su piel, este jabón ofrece el delicioso perfume de leche de coco con pétalos de jazmín."
   },
@@ -157,7 +157,7 @@
     "nombre": "Jabón en barra Dove Agua Micelar",
     "precio": 1300,
     "categoria": "Jabones",
-    "stock": 70,
+    "quantity": 70,
     "imagen": "doveJabon3.png",
     "descripcion": "Con 1/4 crema hidratante y limpiadores suaves, Dove ayuda a proteger la hidratación natural de la piel. Dove no reseca la piel como lo hacen los jabones comunes. Ningún jabón en barra común hidrata la piel mejor que Dove. Puede usarse diariamente en la cara, las manos y el cuerpo. Deja la piel suave, bien cuidada y con aspecto saludable.Esta barra de belleza combina el poder limpiador micelar con 1/4 de crema humectante. Durante el baño, pequeñas micelas se forman alrededor de los factores estresantes ambientales diarios, como la suciedad y las impurezas, limpiándolas suavemente dejando tu piel suave. Producto cosmético sin acción terapéutica."
   },
@@ -166,7 +166,7 @@
     "nombre": "Jabón en barra Dove Granada y Verbena",
     "precio": 1300,
     "categoria": "Jabones",
-    "stock": 70,
+    "quantity": 70,
     "imagen": "doveJabon2.png",
     "descripcion": "Con 1/4 crema hidratante y limpiadores suaves, Dove ayuda a proteger la hidratación natural de la piel Dove no reseca la piel como lo hacen los jabones comunes Fragancia refrescante de granada y verbena Ningún jabón en barra común hidrata la piel mejor que Dove. Puede usarse diariamente en la cara, las manos y el cuerpo Deja la piel suave, bien cuidada y con aspecto saludable El Jabón Dove Go Fresh Granada y Verbena logra un suave despertar para tu piel. ¿Te preguntás cómo refrescar su piel y mantenerla suave y nutrida al mismo tiempo? El baño es un buen momento para empezar el día con más frescura, y por eso creamos el Jabón Dove Go Fresh Granada y Verbena. Con 1/4 de crema hidratante y un limpiador suave, este jabón ayuda a reponer nutrientes naturales de la piel que se pierden durante el baño y ayuda a la piel a mantener su hidratación natural, además de traer una sensación de frescura con el aroma vívido de la granada. "
   },
@@ -175,7 +175,7 @@
     "nombre": "Barra de Belleza Original",
     "precio": 1300,
     "categoria": "Jabones",
-    "stock": 70,
+    "quantity": 70,
     "imagen": "doveJabonClassic.png",
     "descripcion": "Dove es diferente. No reseca la piel como el resto de los jabones comunes ya que posee un 1/4 de crema humectante e ingredientes de origen natural que limpian y humectan tu piel. Además es hipoalergénico y suave hasta con las pieles más delicadas. Las barras de belleza Dove tienen pH neutro y están aprobadas por PETA ya que Dove no testea en animales en ninguna parte del mundo. "
   },  {
@@ -183,8 +183,8 @@
     "nombre": "Detergente If",
     "precio": 599,
     "categoria": "Detergentes",
-    "stock": 100,
-    "imagen": "detergente.jpg",
+    "quantity": 100,
+    "imagen": "detergente.png",
     "descripcion": "Detergente líquido para lavar ropa, elimina manchas y deja la ropa limpia y fresca."
   },
   {
@@ -192,8 +192,8 @@
     "nombre": "Limpiador multiusos",
     "precio": 349,
     "categoria": "Limpiadores",
-    "stock": 80,
-    "imagen": "limpiador.jpg",
+    "quantity": 80,
+    "imagen": "limpiador.png",
     "descripcion": "Limpiador multiusos para diversas superficies, elimina la suciedad y deja un agradable aroma."
   },
   {
@@ -201,8 +201,8 @@
     "nombre": "Cloro",
     "precio": 675,
     "categoria": "Limpiadores líquidos",
-    "stock": 120,
-    "imagen": "desinfectante.jpg",
+    "quantity": 120,
+    "imagen": "desinfectante.png",
     "descripcion": "Desinfectante de superficies efectivo contra gérmenes y bacterias, ideal para mantener la higiene en el hogar."
   },
   {
@@ -210,8 +210,8 @@
     "nombre": "Esponja de acero",
     "precio": 125,
     "categoria": "Accesorios",
-    "stock": 200,
-    "imagen": "esponjilla.jpg",
+    "quantity": 200,
+    "imagen": "esponjilla.png",
     "descripcion": "Esponja resistente para fregar utensilios de cocina y superficies, facilita la limpieza de manera eficiente."
   },
   {
@@ -219,8 +219,8 @@
     "nombre": "Limpiador en aerosol",
     "precio": 499,
     "categoria": "Aerosoles",
-    "stock": 60,
-    "imagen": "limpiador_aerosol.jpg",
+    "quantity": 60,
+    "imagen": "limpiador_aerosol.png",
     "descripcion": "Limpiador en aerosol para eliminar manchas y suciedad de manera rápida y sencilla."
   },
   {
@@ -228,8 +228,8 @@
     "nombre": "Gel desinfectante de manos",
     "precio": 299,
     "categoria": "Geles",
-    "stock": 150,
-    "imagen": "desinfectante_manos.jpg",
+    "quantity": 150,
+    "imagen": "desinfectante_manos.png",
     "descripcion": "Gel desinfectante de manos para una limpieza efectiva en cualquier momento y lugar."
   },
   {
@@ -237,8 +237,8 @@
     "nombre": "Jabón blanco en barra",
     "precio": 199,
     "categoria": "Jabones",
-    "stock": 180,
-    "imagen": "jabon.jpg",
+    "quantity": 180,
+    "imagen": "jabon.png",
     "descripcion": "Jabón en barra con suave fragancia, limpia y cuida la piel dejándola suave y fresca."
   },
   {
@@ -246,8 +246,8 @@
     "nombre": "Jabón líquido para ropa",
     "precio": 425,
     "categoria": "Detergentes",
-    "stock": 90,
-    "imagen": "quitamanchas.jpg",
+    "quantity": 90,
+    "imagen": "quitamanchas.png",
     "descripcion": "Quitamanchas efectivo para eliminar manchas difíciles en prendas de vestir y textiles."
   },
   {
@@ -255,8 +255,8 @@
     "nombre": "Toallitas desinfectantes",
     "precio": 375,
     "categoria": "Limpiadores líquidos",
-    "stock": 110,
-    "imagen": "toallitas.jpg",
+    "quantity": 110,
+    "imagen": "toallitas.png",
     "descripcion": "Toallitas desinfectantes para una limpieza rápida y conveniente de superficies y objetos."
   },
   {
@@ -264,8 +264,8 @@
     "nombre": "Cepillo para pelo",
     "precio": 249,
     "categoria": "Accesorios",
-    "stock": 170,
-    "imagen": "cepillo.jpg",
+    "quantity": 170,
+    "imagen": "cepillo.png",
     "descripcion": "Cepillo de limpieza con cerdas resistentes, ideal para remover la suciedad incrustada."
   },
   {
@@ -273,8 +273,8 @@
     "nombre": "Ambientador en spray",
     "precio": 399,
     "categoria": "Aerosoles",
-    "stock": 70,
-    "imagen": "ambientador.jpg",
+    "quantity": 70,
+    "imagen": "ambientador.png",
     "descripcion": "Ambientador en spray con fragancia fresca, elimina los malos olores y deja un ambiente agradable."
   },
   {
@@ -282,8 +282,8 @@
     "nombre": "Limpiador de ventanas",
     "precio": 450,
     "categoria": "Limpiadores",
-    "stock": 100,
-    "imagen": "limpiador_ventanas.jpg",
+    "quantity": 100,
+    "imagen": "limpiador_ventanas.png",
     "descripcion": "Limpiador especialmente formulado para dejar cristales y ventanas relucientes y sin marcas."
   },
   {
@@ -291,8 +291,8 @@
     "nombre": "Desengrasante",
     "precio": 599,
     "categoria": "Limpiadores líquidos",
-    "stock": 85,
-    "imagen": "desengrasante.jpg",
+    "quantity": 85,
+    "imagen": "desengrasante.png",
     "descripcion": "Desengrasante potente para eliminar la grasa y la suciedad difícil en cocinas y superficies."
   },
   {
@@ -300,8 +300,8 @@
     "nombre": "Esponjilla de metal",
     "precio": 499,
     "categoria": "Accesorios",
-    "stock": 120,
-    "imagen": "esponjilla.jpg",
+    "quantity": 120,
+    "imagen": "esponjilla.png",
     "descripcion": "Esponjilla de metal para multiples usos."
   },
   {
@@ -309,8 +309,8 @@
     "nombre": "Bolsas de basura",
     "precio": 325,
     "categoria": "Accesorios",
-    "stock": 150,
-    "imagen": "bolsas_basura.jpg",
+    "quantity": 150,
+    "imagen": "bolsas_basura.png",
     "descripcion": "Bolsas resistentes para desechar los residuos de manera segura y conveniente."
   },
   {
@@ -318,8 +318,8 @@
     "nombre": "Desodorante para ambientes",
     "precio": 875,
     "categoria": "Aerosoles",
-    "stock": 80,
-    "imagen": "desodorante.jpg",
+    "quantity": 80,
+    "imagen": "desodorante.png",
     "descripcion": "Desodorante en aerosol que neutraliza los olores y refresca el ambiente."
   },
   {
@@ -327,8 +327,8 @@
     "nombre": "Limpiador de baños",
     "precio": 550,
     "categoria": "Limpiadores",
-    "stock": 110,
-    "imagen": "limpiador_banos.jpg",
+    "quantity": 110,
+    "imagen": "limpiador_banos.png",
     "descripcion": "Limpiador especialmente formulado para eliminar la suciedad y los residuos en baños y sanitarios."
   },
   {
@@ -336,8 +336,8 @@
     "nombre": "Jabón líquido para manos",
     "precio": 325,
     "categoria": "Jabones",
-    "stock": 130,
-    "imagen": "jabon_liquido.jpg",
+    "quantity": 130,
+    "imagen": "jabon_liquido.png",
     "descripcion": "Jabón líquido suave para manos, limpia y protege la piel dejándola suave y humectada."
   },
   {
@@ -345,8 +345,8 @@
     "nombre": "Desinfectante de suelos",
     "precio": 699,
     "categoria": "Limpiadores líquidos",
-    "stock": 95,
-    "imagen": "desinfectante_suelos.jpg",
+    "quantity": 95,
+    "imagen": "desinfectante_suelos.png",
     "descripcion": "Desinfectante de suelos efectivo para eliminar gérmenes y bacterias, dejando una superficie limpia y segura."
   },
   {
@@ -354,8 +354,8 @@
     "nombre": "Paño de limpieza",
     "precio": 199,
     "categoria": "Accesorios",
-    "stock": 200,
-    "imagen": "pano_limpieza.jpg",
+    "quantity": 200,
+    "imagen": "pano_limpieza.png",
     "descripcion": "Paño de limpieza suave y absorbente, ideal para limpiar superficies sin dejar residuos."
   }
 ]

@@ -1,67 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include("../partials/head", {title: "Iniciar sesión"}) %> 
-   
-<body>
+<%- include("../partials/head", {title: "Iniciar sesión" }) %>
 
-    <%- include("../partials/header") %>
+    <body>
 
-    <section class="section-register">
-        <div class="contenedor-register">
+        <%- include("../partials/header") %>
 
-            <div class="formulario">
-            
-                 <h2>BIENVENIDO</h2>
-                
-                
-                <form action="/authentication/iniciar" method="post" >
-                    <div class="input-register">
-                        <label for="email">Email</label>
-                        <input type= "email"  name="email" id="email">
-                        <% if (locals.errors) { %>
-                            <p class="text-danger-error">
-                                <%= locals.errors?.email?.msg %>
-                            </p>
-                            <% } %>
-                    </div>
+            <section class="section-register">
+                <div class="contenedor-register">
 
-                    <div class="input-register">
-                        <label for="contrasenia">Contraseña</label>
-                        <div id="ipe-c">
-                            <input type= "password"  name="password" id="contrasenia">
-                            <span id="input-pass-eye">
-                                <i class="fa-solid fa-eye" id="icon-eye"></i>
-                            </span>
-                        </div>
-                        <% if (locals.errors) { %>
-                            <p class="text-danger-error">
-                                <%= locals.errors?.password?.msg %>
-                            </p>
-                            <% } %>
-                        
-                    </div>
-                  
-                  <div class="terminos">
-                        <label for="#">
-                            <input class="form-check-input" name="remember" type="checkbox" id="flexCheckChecked">  Recordarme
+                    <div class="formulario">
+
+                        <h2>BIENVENIDO</h2>
+
+
+                        <form action="/authentication/iniciar" method="post">
+                            <div class="input-register">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email">
+                                <% if (locals.errors) { %>
+                                    <p class="text-danger-error">
+                                        <%= locals.errors?.email?.msg %>
+                                    </p>
+                                    <% } %>
+                            </div>
+
+                            <div class="input-register">
+                                <label for="contrasenia">Contraseña</label>
+                                <div id="ipe-c">
+                                    <input type="password" name="password" id="contrasenia">
+                                    <span id="input-pass-eye">
+                                        <i class="fa-solid fa-eye" id="icon-eye"></i>
+                                    </span>
+                                </div>
+                                <% if (locals.errors) { %>
+                                    <p class="text-danger-error">
+                                        <%= locals.errors?.password?.msg %>
+                                    </p>
+                                    <% } %>
+
+                            </div>
+
+                            <div class="terminos">
+                                <label for="#">
+                                    <input class="form-check-input" name="remember" type="checkbox"
+                                        id="flexCheckChecked"> Recordarme
+                                    <br>
+                                    <a href="#">¿Olvidaste tu Contraseña?</a>
+                                </label>
+                            </div>
+                            <button class="button-register" type="submit">INICIAR SESION</button>
+                        </form>
+
+                        <div>
                             <br>
-                            <a href="#">¿Olvidaste tu Contraseña?</a>
-                        </label>
-                    </div> 
-                    <button class="button-register" type="submit">INICIAR SESION</button>
-                </form>
 
-                <div>
-                  <br>
-
-                    <div class="iniciar">
-                        <p>¿No tengo cuenta? <a href="/authentication/registrar">Registrarse</a></p>
+                            <div class="iniciar">
+                                <p>¿No tengo cuenta? <a href="/authentication/registrar">Registrarse</a></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <script src="../js/mostrarContrasenia.js"></script>
-  </body>
+            </section>
+            <script src="../js/mostrarContrasenia.js"></script>
+    </body>
+
 </html>
-   

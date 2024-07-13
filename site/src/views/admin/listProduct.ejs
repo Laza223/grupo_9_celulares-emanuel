@@ -4,33 +4,42 @@
 
 
 
-    <body class="dashboard-body">
-      <%- include("./navBar") %>
+  <body class="dashboard-body">
+    <%- include("./navBar") %>
       <main class="admin-main-list">
         <div class="admin-header-list">
           <div class="admin-header-list-title">
           
-           <h2 >Productos</h2>
+           <h3></h3><h2 >Productos</h2>
           
           </div>
-          <div class="button-crear">
-            <% if (eliminados === "true") { %>
-              <a href="/admin/dashboard/productos?eliminados=false">
-                <button type="button" class="btn btn-outline-secondary">Excluir productos eliminados</button>
-              </a>
-            <% } else { %>
-              <a href="/admin/dashboard/productos?eliminados=true">
-                <button type="button" class="btn btn-outline-secondary">Ver productos eliminados</button>
-              </a>
-          <% } %>
-            
-            <a href="/admin/dashboard/crear"> <button type="button" class="btn btn-outline-secondary"class="btn btn-primary">Crear producto</button></a>
+          
+         
+          <div class="admin-container-inputs"> 
+  
+          
+         
+         
+          <% if (eliminados === "true") { %>
+            <a href="/admin/dashboard/productos?eliminados=false">
+              <button type="button" class="btn btn-outline-secondary" id="exclude-button-admin">Excluir productos eliminados</button>
+            </a>
+          <% } else { %>
+            <a href="/admin/dashboard/productos?eliminados=true">
+              <button type="button" class="btn btn-outline-secondary" id="exclude-button-admin">Ver productos eliminados</button>
+            </a>
+        <% } %>
+        <a href="/admin/dashboard/crear"> <button type="button" class="btn btn-outline-success">Crear producto</button></a>
+          <input type="text" id="input-search-admin" placeholder="Buscar" >
+          
+      </div>
           </div>
-          </div>
-          <table class="admin-table-list">
-            <thead>
+        
+          <table class="table table-borderless table-hover" id="table-search-admin">
+            <thead class=" table-dark">
               <tr>
-                <th scope="col">id</th>
+                <th scope="col"> <strong class="toUpperCase">id</strong></th>
+                <th scope="col">Imagen</th>
                 <th scope="col">Nombre</th>
                 <th scope="col">Precio</th>
                 <th scope="col">Stock</th>
@@ -40,12 +49,15 @@
               
               </tr>
             </thead>
-            <tbody>
+            <tbody >
               <% products.forEach(producto=> { %>
-                <tr class="records">
+                <tr >
                   <th scope="row">
-                    <%= producto.id %>
+                   <%= producto.id %>
                   </th>
+                  <td>
+                    <img src="/images/products/<%= producto.image %>" alt="" width="30px">
+                  </td>
                   <td>
                     <%= producto.name %>
                   </td>
@@ -59,15 +71,14 @@
                   </td>
                   <% if (producto.deletedAt === null) { %>
                   <td> <a href="/admin/dashboard/editar/<%= producto.id %>"
-                    class="btn btn-outline-warning">Editar</a>
-                  </td>
+                    class="btn btn-outline-warning">Editar </a></td>
 
                       <td>
-                        <a href="/admin/dashboard/eliminar/<%= producto.id %>" class="btn btn-outline-danger"><i class="fa-solid fa-trash-can"></i> </a>
+                        <button  class="btn btn-outline-danger deleteButton" data-id="<%= producto.id %>"><i class="fa-solid fa-trash-can"></i> </button>
                         
                       <% } else { %>
                         <td>
-                          <button class="btn btn-secondary" disabled>Eliminado el <%= producto.deletedAt ? producto.deletedAt.toLocaleDateString('es-ES', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }) : '' %></button>
+                          Eliminado el <%= producto.deletedAt ? producto.deletedAt.toLocaleDateString('es-ES', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }) : '' %>
                       </td>
                       
                         <td><form action="/admin/dashboard/restaurar/<%= producto.id %>?_method=PUT" method="post">
@@ -77,15 +88,16 @@
                          
                       <% } %>
                   </td>
-
+               
                 </tr>
+           
                 <% }) %>
-
+            
         
 
 
 
-        </tbody>
+          </tbody>
 
 
         </table>
@@ -95,6 +107,6 @@
 
       <%- include("../partials/scripts") %>
 
-    </body>
+  </body>
 
 </html>

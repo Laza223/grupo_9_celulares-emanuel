@@ -1,7 +1,4 @@
 'use strict';
-
-const { defaultValueSchemable } = require('sequelize/lib/utils');
-
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
@@ -12,35 +9,38 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      user_Id: {
-        type: Sequelize.INTEGER
+      total: {
+        type: Sequelize.DOUBLE
       },
-      date: {
-        type: Sequelize.DATE
+      userId: {
+        type: Sequelize.INTEGER,
+        allowNull:false,
+
+        references:{
+          model:{
+            tableName:'users'
+          },
+          key:'id'
+        },
+        onDelete: 'CASCADE',
+        onUpdate: 'CASCADE'
       },
-      status_id: {
-        type: Sequelize.INTEGER
-      },
-      shipping_address: {
-        type: Sequelize.STRING
-      },
-      payment_method: {
-        type: Sequelize.INTEGER
+      state: {
+        type: Sequelize.STRING(45)
       },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE,
-        defaultValue: new Date(),
+        defaultValue: new Date()
       },
       updatedAt: {
         allowNull: false,
         type: Sequelize.DATE,
-        defaultValue: new Date(),
+        defaultValue: new Date()
       },
       deletedAt: {
-        allowNull: true,
         type: Sequelize.DATE
-      },
+      }
     });
   },
   async down(queryInterface, Sequelize) {

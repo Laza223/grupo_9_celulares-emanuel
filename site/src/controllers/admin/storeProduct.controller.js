@@ -4,11 +4,11 @@ const { validationResult } = require("express-validator")
 module.exports = async (req, res) => {
 
   try {
-    const errors = validationResult(req);
+const errors = validationResult(req);
 
-    if (errors.isEmpty()) {
+if (errors.isEmpty()) {
       const { name, price, description, category, stock } = req.body;
-
+      const image = req.file.filename ? req.file.filename : "product-default.jpg"
 
       await db.Product
         .create({
@@ -16,12 +16,20 @@ module.exports = async (req, res) => {
           price: +price,
           categoryId: +category,
           stock: +stock,
-          image:  req.file.filename,
+          image: image,
           description: description.trim()
         })
     
       return res.redirect("/admin/dashboard/productos")
 
+    } else {
+      const categories = await db.Category.findAll()
+      console.log(errors.mapped());
+      return res.render("admin/createProduct", { 
+        old: req.body,
+        errors: errors.mapped(),
+        categories: categories
+      })
     }
   }
 

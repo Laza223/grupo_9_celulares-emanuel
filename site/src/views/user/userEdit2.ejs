@@ -7,12 +7,13 @@
         <%- include("../partials/header") %>
             <main class="main-userEdit">
                 <form method="POST" action="/perfil/editar?_method=PUT" enctype="multipart/form-data" class="perfil">
-                <h1>Editar usuario</h1>
+                    <h1>Editar usuario</h1>
 
                     <div class="user-dates">
                         <div>
                             <label for="name" class="form-label">Nombre:</label>
                             <input type="text" id="name" name="name" class="form-control" value="<%= user.name %>">
+<<<<<<< HEAD
                             <% if(locals.errors){ %>
                                 <p class="text-danger-error">
                                     <%= locals?.errors?.name?.msg %>
@@ -20,12 +21,16 @@
                                 <% } else {%>
                                     <p class="text-danger-error errName"></p>
                                 <% } %>
+=======
+                                <p class="text-danger"><%= locals.errors?.name?.msg %></p>
+>>>>>>> 40fd05b4d5fd6da8eb82be2c7a7a3d182f073951
                         </div>
 
                         <div>
                             <label for="surname" class="form-label">Apellido:</label>
                             <input type="text" id="surname" name="surname" class="form-control"
                                 value="<%= user.surname %>">
+<<<<<<< HEAD
                             <% if(locals.errors){ %>
                                 <p class="text-danger-error">
                                     <%= locals?.errors?.surname?.msg %>
@@ -33,12 +38,16 @@
                                 <% } else {%>
                                     <p class="text-danger-error errSurName"></p>
                                 <% } %>
+=======
+                                <p class="text-danger"><%= locals.errors?.surname?.msg %></p>
+>>>>>>> 40fd05b4d5fd6da8eb82be2c7a7a3d182f073951
                         </div>
 
                         <div>
                             <label for="phoneNumber" class="form-label">Teléfono:</label>
                             <input type="tel" id="phoneNumber" name="phoneNumber" class="form-control"
                                 value="<%= user.phoneNumber %>">
+<<<<<<< HEAD
                             <% if(locals.errors){ %>
                                 <p class="text-danger-error">
                                     <%= locals?.errors?.phoneNumber?.msg %>
@@ -46,17 +55,21 @@
                                 <% } else {%>
                                     <p class="text-danger-error errPhone"></p>
                                 <% } %>
+=======
+                                <p class="text-danger"><%= locals.errors?.phoneNumber?.msg %></p>
+>>>>>>> 40fd05b4d5fd6da8eb82be2c7a7a3d182f073951
                         </div>
                     </div>
                     <div class="container-file-old-new">
                         <div class="mb-3">
                             <label class="form-label">Foto de perfil actual</label>
-                            <img src="/images/users/<%= user.avatar %>" width="300px">
+                            <img src="<%= /http/.test(user.avatar) ? user.avatar : '/images/users/' + user.avatar%>"  width="300px">
                         </div>
 
                         <div class="mb-3">
                             <label for="avatar" class="form-label">Nueva foto de perfil</label>
-                            <input class="form-control" type="file" id="file" accept="image/*" name="avatar" value="<%= user.avatar %>">
+                            <input class="form-control" type="file" id="file" accept="image/*" name="avatar"
+                                value="<%= user.avatar %>">
                         </div>
                     </div>
                     <div class="container-buttons-userEdit">
@@ -71,6 +84,7 @@
             </main>
             <%- include("../partials/footer") %>
                 <%- include("../partials/scripts") %>
+                <script src="/js/modifyProfile.js"></script>
     </body>
 
 </html>

@@ -16,7 +16,7 @@ module.exports = {
         type: Sequelize.STRING
       },
       price: {
-        type: Sequelize.DECIMAL
+        type: Sequelize.DOUBLE
       },
       categoryId: {
         type: Sequelize.INTEGER,
@@ -27,7 +27,7 @@ module.exports = {
           key: "id"
         }
       },
-      stock: {
+      quantity: {
         type: Sequelize.INTEGER
       },
       image: {

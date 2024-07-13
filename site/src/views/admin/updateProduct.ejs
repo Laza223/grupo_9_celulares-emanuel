@@ -1,59 +1,81 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <%- include("../partials/head", {title: "Editar producto"}) %>
 <body class="dashboard-body">
-<%- include("./navBar") %>
-<main class="edicion-producto">
+  <%- include("./navBar") %>
+  <main class="edicion-producto">
     <h2 class="h2-edit">Editar producto</h2>
 
-    <form action="/admin/dashboard/editar/<%= producto.id %>?_method=PUT" method="POST" class="form-edit">
-        <div class="mb-3 col-6">
-            <label for="exampleInputPassword1" class="form-label">Nombre</label>
-            <input name="name" value="<%= producto.name %>" type="text" class="form-control input-edicion" id="exampleInputPassword1">
-            <hr>
-        </div>
+    <form action="/admin/dashboard/editar/<%= product.id %>?_method=PUT" enctype="multipart/form-data" method="POST" class="form-edit">
+      <div class="mb-3 col-6">
+        <label for="exampleInputPassword1" class="form-label">Nombre</label>
+        <input name="name" value="<%= locals.old ? locals.old.name : product.name %>" type="text" class="form-control input-edicion" id="exampleInputPassword1">
+        <p>  <% if (locals.errors?.name) { %>
+         class="text-danger"><%= locals.errors.name.msg %>
+        <% } %></p>
+   
+      </div>
 
-        <div class="mb-3 col-6">
-            <label for="exampleInputEmail1" class="form-label">Precio</label>
-            <input name="price" value="<%= producto.price %>" type="number" class="form-control input-edicion" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <hr>
-        </div>
-        <div class="mb-1 col-6">
-            <label for="exampleInputStock" class="form-label">Stock</label>
-            <input name="stock" value="<%= producto.stock %>" type="number" class="form-control input-edicion" id="exampleInputStock">
-            <hr>
-        </div>
+      <div class="mb-3 col-6">
+        <label for="exampleInputEmail1" class="form-label">Precio</label>
+        <input name="price" value="<%= locals.old ? locals.old.price : product.price %>" type="number" class="form-control input-edicion" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+        <p class="text-danger">  <% if (locals.errors?.price) { %>
+         <%= locals.errors?.price.msg %>
+        <% } %></p>
+       
+      </div>
+      
+      <div class="mb-1 col-6">
+        <label for="exampleInputStock" class="form-label">Stock</label>
+        <input name="stock" value="<%= product.stock %>" type="number" class="form-control input-edicion" id="exampleInputStock" required>
+        <p  class="text-danger">  <% if (locals.errors?.stock) { %>
+        <%= locals.errors.stock.msg %>
+        <% } %></p>
+        
+      </div>
 
-        <div class="mb-3 col-6 descripcion">
-            <label for="exampleFormControlTextarea1" class="form-label">Descripción</label>
-            <textarea class="form-control input-edicion" name="description" id="exampleFormControlTextarea1" rows="3"><%= producto.description %></textarea>
-            <hr>
-        </div>
+      <div class="mb-3 col-6 descripcion">
+        <label for="exampleFormControlTextarea1" class="form-label">Descripción</label>
+        <textarea class="form-control input-edicion" name="description" id="exampleFormControlTextarea1" rows="3"><%= locals.old ? locals.old.description : product.description %></textarea>
+        <p class="text-danger">  <% if (locals.errors?.description) { %>
+       <%= locals.errors.description.msg %>
+        <% } %></p>
+        
+      </div>
 
-        <div class="mb-3 col-6">
-            <label for="inputGroupSelect01" class="form-label">Categoría</label>
-            <select class="form-select" id="inputGroupSelect01" name="category">
-              <% categorias.forEach(c => { %>
-                  <option <%= producto.category && producto.category.name === c.name ? 'selected' : '' %> value="<%= c.id %>"> <%= c.name %> </option>
-              <% }) %>
-          </select>
-          
-          
-        </div>
+      <div class="mb-3 col-6">
 
-        <div class="buttons">
-            <button type="reset" class="btn btn-danger row gap-3 col-2 boton-borrar">Deshacer cambios</button>
-            <button type="submit" class="btn btn-success row gap-3 col-2 boton-guardar">Guardar</button>
-        </div>
+        <label for="inputGroupSelect01" class="form-label">Categoría</label>
+        <select class="form-select" id="inputGroupSelect01" name="category" required>
+          <% categories.forEach(c => { %>
+            <option <%= product.category && product.category.name === c.name ? 'selected' : '' %> value="<%= c.id %>"><%= c.name %></option>
+          <% }) %>
+        </select>
+        <p  class="text-danger"> <% if (locals.errors?.category) { %>
+     <%= locals.errors.category.msg %>
+        <% } %></p>
+      </div>
+      
+      <div class="mb-3">
+        <label for="file" class="form-label">Nueva imagen</label>
+        <input class="form-control" type="file" id="file" accept="image/*" name="imageProduct" value="<%= locals.old? locals.old.image : product.image %>" required>
+        <p class="text-danger">   <% if (locals.errors?.imageProduct) { %>
+        <%= locals.errors.imageProduct.msg %>
+        <% } %></p>
+      </div>
+
+      <div class="buttons">
+        <button type="reset" class="btn btn-danger row gap-3 col-2 boton-borrar">Deshacer cambios</button>
+        <button type="submit" class="btn btn-success row gap-3 col-2 boton-guardar">Guardar</button>
+      </div>
     </form>
+    
     <div class="button-volver">
-        <a href="/admin/dashboard/productos" class="btn btn-primary">Volver</a>
+      <a href="/admin/dashboard/productos" class="btn btn-primary">Volver</a>
     </div>
-</main>
+  </main>
 
-<script src="/js/editPreview.js"></script>
-
-<%- include("../partials/scripts") %>
+  <script src="/js/editPreview.js"></script>
+  <%- include("../partials/scripts") %>
 </body>
 </html>

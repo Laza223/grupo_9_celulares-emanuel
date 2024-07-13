@@ -1,19 +1,17 @@
+
 'use strict';
 
-const ordersJSON = require("../../database/orders.json")
+const ordersJSON = require('../../database/orders.json')
 const usersJSON = require("../../database/users.json")
-const productsJSON = require("../../database/products.json")
+
 
 
 const ordersDBMapped = ordersJSON.map(o => {
-  const user = usersJSON.find(u => u.id === o.userId)
-  const product = productsJSON.find(p => p.id === o.productId)
+  const user = usersJSON.find(u => u.email === o.user)
   return {
-    user_id: o.user,
-    date: o.date,
-    status_id: o.status,
-    shipping_address: o.shipping_address,
-    payment_method: o.payment_method,
+    total: o.total,
+    userId: user ? user.id : null,
+    state: o.state,
   }
 })
 

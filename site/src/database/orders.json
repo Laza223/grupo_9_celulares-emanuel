@@ -1,12 +1,30 @@
 [
     {
         "id": 1,
-        "user" : 1,
-        "status" : 2,
-        "shipping_adress" : "Calle falsa 123",
-        "payment_method" : 1,
-        "date" : "2022-01-01 00:00:00",
-        "total" : 1000,
-        "products" : [{ "name" : "detergentes", "quantity" : 2 }, { "name" : "limpiadores liquidos", "quantity" : 1 }]
+        "total": 3299,
+        "user": "lucasmaciel17ynine@gmail.com",
+        "state": "pending",
+        "products": [
+            {
+                "name": "Cif Gatillo Limpiador Vidrios y Superficies Delicadas",
+                "quantity": 2
+            },
+            {
+                "name": "Saphirus Textil Flores Silvestres",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "total": 2500,
+        "user": "rodrigo10ruiz@hotmail.com",
+        "state": "pending",
+        "products": [
+            {
+                "name": "Saphirus Textil Flores Silvestres",
+                "quantity": 1
+            }
+        ]
     }
 ]

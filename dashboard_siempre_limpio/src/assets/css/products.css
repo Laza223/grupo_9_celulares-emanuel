@@ -1,0 +1,10 @@
+.DataGridContainer {
+    padding: 0px 30px;
+}
+
+.buttonDashboardContainer {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

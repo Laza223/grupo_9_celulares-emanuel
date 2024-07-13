@@ -11,7 +11,7 @@ module.exports = async (req, res) => {
                 where: { id }
             })
 
-        return res.redirect("/admin/dashboard/productos")
+        return res.redirect("/admin/dashboard/productos?eliminados=true")
     }
 
     catch (error) { res.send(error) }

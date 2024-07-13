@@ -1,0 +1,40 @@
+.admin-user-details h3{
+    margin-left: 60px;
+    margin-bottom: 20px;
+}
+
+#admin-user-info{
+    display: flex;
+    margin-bottom: 140px;
+    align-items: center;
+    justify-content: center;
+    gap:200px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+#admin-user-info form{
+    width: 30%;
+}
+
+.container-admin-user-address{
+    display: flex;
+    padding: 25px;
+    gap: 100px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+#admin-form-edit-product{
+    width: 700px;
+    
+}
+
+#container-admin-form-edit-product{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+

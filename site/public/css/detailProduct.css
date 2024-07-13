@@ -135,7 +135,6 @@
     margin: auto;
     margin-top: 30px;
     background-color: white;
-    overflow: hidden;
 }
 
 .swiper-wrapper {
@@ -150,7 +149,6 @@
     display: flex;
     justify-content: center;
     /* align-items: center; */
-    padding: 30px;
 }
 
 .swiper-slide img {
@@ -305,11 +303,7 @@
     .swiper {
         border-radius: 8px;
         border: solid 1px lightgray;
-
-    }
-
-    .swiper-slide {
-        padding: 10px;
+        overflow: hidden;
     }
 
 }

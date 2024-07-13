@@ -1,69 +1,75 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <%- include("../partials/head", {title: "Crear producto" }) %>
-
-  <body class="dashboard-body">
-
-    <%- include("./navBar") %>
-
-      <main class="create-product">
-
-        <h2 class="h2-create">crear producto</h2>
-        <form action="/admin/dashboard/crear" method="POST" class="crear-form" enctype="multipart/form-data">
-          <div class="mb-3    col-6 ">
-            <label for="inputName" class="form-label label-create">nombre</label>
-            <input type="text" class="form-control input-create" id="inputName" name="name">
-            <hr>
-          </div>
-
-          <div class="mb-3  col-6 ">
-            <label for="inputPrice" class="form-label"> Precio</label>
-            <input type="number" name="price" class="form-control input-create" id="inputPrice"
-              aria-describedby="emailHelp">
-            <hr>
-          </div>
-
-          <div class="mb-1  col-6 ">
-            <label for="inputStock" class="form-label">Stock</label>
-            <input type="number" name="stock" class="form-control input-create" id="inputStock">
-            <hr>
-          </div>
-
-          <div class="mb-3   descripcion col-6">
-            <label for="inputDescripcion" class="form-label ">descripcion</label>
-            <textarea name="description" class="form-control input-create" id="inputDescripcion" rows="3"></textarea>
-            <hr>
-          </div>
-
+<body class="dashboard-body">
+  <%- include("./navBar") %>
+  <main class="create-product">
+    <h2 class="h2-create">crear producto</h2>
+    <form action="/admin/dashboard/crear" method="POST" class="crear-form" enctype="multipart/form-data">
+      <div class="mb-3 col-6">
+        <label for="inputName" class="form-label label-create">Nombre</label>
+        <input type="text" class="form-control input-create" id="inputName" name="name" required value="<%= locals.old && locals.old.name ? locals.old.name : '' %>">
+        <p class="text-danger"><% if (locals.errors?.name) { %>
+          <%= errors.name.msg %>
+        <% } %></p>
           
-     <div class="mb-3 col-6  ">
-             <input  type="file" name="file">
-            <hr>
-          </div>
-          
+      
+      </div>
 
-          <div class="input-group mb-3  col-6  categorias">
-            <label class="input-group-text " for="inputGroupSelect01">categorias</label>
-            <select class="form-select" id="inputGroupSelect01" name="category">
-              <% categories.forEach(c=> { %>
-                <option value="<%= c.id %>">
-                  <%= c.name %>
-                </option>
-                <% }) %>
-            </select>
-            <hr>
-          </div>
+      <div class="mb-3 col-6">
+        <label for="inputPrice" class="form-label">Precio</label>
+        <input type="number" name="price" class="form-control input-create" id="inputPrice" required value="<%= locals.old?.price || '' %>">
+        <p class="text-danger"> <% if (locals.errors?.price) { %>
+         <%= locals.errors.price.msg %>
+        <% } %></p>
+      
+      </div>
 
+      <div class="mb-1 col-6">
+        <label for="inputStock" class="form-label">Stock</label>
+        <input type="number" name="stock" class="form-control input-create" id="inputStock" required value="<%= locals.old?.stock || '' %>">
+        <p class="text-danger"> <% if (locals.errors?.stock) { %>
+          <%= locals.errors.stock.msg %>
+        <% } %>
+      </p>
+      </div>
 
-          <div class="botones">
-            <button type="submit" class="btn btn-success row gap-3 col-2 boton-crear">Crear producto</button>
-            <a href="/admin/dashboard/productos" class="btn btn-primary boton-regresar ">Volver</a>
-          </div>
+      <div class="mb-3 descripcion col-6">
+        <label for="inputDescripcion" class="form-label">Descripción</label>
+        <textarea name="description" class="form-control input-create" id="inputDescripcion" required rows="3"><%= locals.old?.description || '' %></textarea>
+        <p class="text-danger"> <% if (locals.errors?.description) { %>
+       <%= locals.errors.description.msg %>
+        <% } %></p>
+      
+      </div>
 
-        </form>
-      </main>
-      <%- include("../partials/scripts") %>
-  </body>
+      <div class="mb-3 col-6">
+        <input type="file" name="imageProduct"  accept="image/*" required>
+        <p class="text-danger"> <% if (locals.errors?.file) { %>
+         <%= locals.errors.file.msg %>
+        <% } %></p>
+        
+      </div>
 
+      <div class="input-group mb-3 col-6 categorias">
+        <label class="input-group-text" for="inputGroupSelect01">Categorías</label>
+        <select class="form-select" id="inputGroupSelect01" name="category" required>
+          <% categories.forEach(c => { %>
+            <option value="<%= c.id %>" <%= locals.old?.category == c.id ? 'selected' : '' %>><%= c.name %></option>
+          <% }) %>
+        </select>
+        <p class="text-danger">  <% if (locals.errors?.category) { %>
+         <%= locals.errors.category.msg %>
+        <% } %></p>
+        <hr>
+      </div>
+
+      <div class="botones">
+        <button type="submit" class="btn btn-success row gap-3 col-2 boton-crear">Crear producto</button>
+        <a href="/admin/dashboard/productos" class="btn btn-primary boton-regresar">Volver</a>
+      </div>
+    </form>
+  </main>
+  <%- include("../partials/scripts") %>
+</body>
 </html>

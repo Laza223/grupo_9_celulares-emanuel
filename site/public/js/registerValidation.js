@@ -16,7 +16,7 @@ window.addEventListener("load", () => {
     const allInputs = document.querySelectorAll(".inputRegister")
     const checkIcon = document.querySelectorAll(".check-icon")
     const containerFormRegister = document.querySelector(".register")
-    const containerFormLogin = document.querySelector(".login");
+    const containerFormLogin = document.querySelector(".login")
     const errorLogin = document.querySelector("#errorLogin")
     const successRegister = document.querySelector("#successRegister")
     const emailLoginValue = document.querySelector("[name='emailLogin']")

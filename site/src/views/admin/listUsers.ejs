@@ -4,65 +4,65 @@
 
 
 
-    <body class="dashboard-body">
-      <%- include("./navBar") %>
+  <body class="dashboard-body">
+    <%- include("./navBar") %>
       <main class="admin-main-list">
 
         <div class="admin-header-list">
-          <div class="admin-header-list-title">
-      
-           <h2 >Usuarios</h2>
           
-          </div>
-          </div>
-          <a href="/api/usuarios" class="btn btn-success">Listado de usuarios (JSON)</a>
+          <div class="admin-header-list-title">
 
-          <table class="admin-table-list">
-            <thead>
-              <tr >
-                <th scope="col">Id</th>
-                <th scope="col">Nombre</th>
-                <th scope="col">Apellido</th>
+            <h2>Usuarios</h2>
+
+          </div>
+          <input type="text" id="input-search-admin" placeholder="Buscar">
+          </div>
+          
+          <table class="table table-hover table-borderless " id="table-search-admin">
+            <thead class="table-dark">
+              <tr class="clickable-row" data-url="/admin/dashboard/usuarios/<%= users.id %>" >
+                <th scope="col"></th>
+                <th scope="col">Usuario</th>
                 <th scope="col">Email</th>
                 <th scope="col">Rol</th>
-                <th scope="col">Imagen</th>
+                <th scope="col"></th>
                 <th scope="col"></th>
               </tr>
             </thead>
-            <tbody>
+            <tbody class="table-group-divider">
+             
               <% users.forEach(user=> { %>
                 <tr class="records">
-                  <th scope="row">
-                    <%= user.id %>
-                  </th>
-                  <td>
-                    <%= user.name %>
+                  <td><img src="<%= /http/.test(user.avatar) ? user.avatar : '/images/users/' + user.avatar%>"  alt="" width="40px" height="40px" ></td>
+                  <td scope="row">
+                    <%= user.name %>  <%= user.surname %>
                   </td>
-                  <td>
-                    <%= user.surname %>
-                  </td>
-                  <td>
+                  <td scope="row">
                     <%= user.email %>
                   </td>
-                  <td>
+                  <td scope="row">
                     <%= user.role.name %>
                   </td>
-                  <td><img src="/images/users/<%= user.avatar %>" alt="jabon" width="30px" ></td>
-                  <td><a href="/admin/dashboard/usuarios/detalle/<%= user.id %>" class="btn btn-success">Detalles</a></td>
+                  <td scope="row">
+                    
+                  </td>
+                  <td scope="row">
+                    <a href="/admin/dashboard/usuarios/<%= user.id %>" class="btn btn-success">Detalles</a>
+                  </td>
                
               
                
                 <% }) %>
-            </tr>
-    
-        </tbody>
+              </tr>
+
+          </tbody>
         </table>
-   
+
       </main>
 
 
       <%- include("../partials/scripts") %>
 
-    </body>
+  </body>
 
 </html>

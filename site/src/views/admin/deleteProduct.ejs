@@ -1,23 +1,22 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<%- include("../partials/head", {title: "Eliminar producto"}) %>
+<%- include("../partials/head", {title: "Eliminar producto" }) %>
 
-<body class="dashboard-body">
-    <%- include("./navBar") %>
-    <div class="deleteProductDivPrinc">
-        <div class="deleteProductDiv1">
-        
-            <h1>¿Estás seguro que desea eliminar el producto: <%=product.name%>?</h1>
-            <img src="/images/<%=product.image%>" alt="asd" width="50px">
-        <form action="/admin/dashboard/eliminar/<%= product.id %>?_method=DELETE" method="post">
-            <div class="buttonsDeleteProduct">
-                <a href="/admin/dashboard/productos" class="btn btn-primary boton-regresar">Cancelar</a>
-                <button type="submit" class="btn btn-danger boton-eliminar">Eliminar</button>
+    <body class="dashboard-body">
+        <%- include("./navBar") %>
+            <div class="deleteProductDivPrinc">
+                <div class="deleteProductDiv1">
+
+                    <h1>¿Estás seguro que desea eliminar el producto: <%=product.name%>?</h1>
+                    <img src="/images/<%=product.image%>" alt="asd" width="50px">
+                    <form action="/admin/dashboard/eliminar/<%= product.id %>?_method=DELETE" method="post">
+                        <div class="buttonsDeleteProduct">
+                            <a href="/admin/dashboard/productos" class="btn btn-primary boton-regresar">Cancelar</a>
+                            <button type="submit" class="btn btn-danger boton-eliminar">Eliminar</button>
+                        </div>
+                    </form>
+                </div>
             </div>
-        </form>
-    </div>
-    </div>
-</body>
-</html>
+    </body>
 
+</html>

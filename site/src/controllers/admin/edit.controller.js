@@ -1,18 +1,28 @@
 const db = require("../../db/models");
 
-module.exports = (req, res) => {
+module.exports = async (req, res) => {
+    try {
+        
+        const {id} = req.params
+        const product =
+           await 
+                db.Product
+                    .findByPk(id, {
+                        include: [{
+                            model: db.Category,
+                            as: "category",
+                        }]
+                    }
+                    )
+           
 
-    Promise.all([
-        db.Product.findByPk(req.params.id, {
-            include: [{
-                model: db.Category,
-                as: "category",
-            }]
-        }),
-        db.Category.findAll()
-    ])
-        .then(([producto, categorias]) => {
-            res.render("admin/updateProduct", { producto, categorias });
-        })
-        .catch(error => { console.error("Error al obtener producto y categorías:", error); });
+        const categories = await db.Category.findAll()
+
+       
+        return res.render("admin/updateProduct", { product, categories });
+
+    }
+    catch (error) {
+        console.error("Error al obtener producto y categorías:", error)
+    };
 }

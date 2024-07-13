@@ -10,7 +10,21 @@
       "role": "ADMIN",
       "addressID": 1,
       "dni": 40111222,
-      "phoneNumber": "11-43219876"
+      "phoneNumber": "11-43219876",
+      "favourites": [
+         {
+            "name": "Cif Gatillo Limpiador Vidrios y Superficies Delicadas"
+         },
+         {
+            "name": "Saphirus Textil Flores Silvestres"
+         },
+         {
+            "name": "Detergente If"
+         },
+         {
+            "name": "Limpiador Aromatizante Suavidad de algodón"
+         }
+      ]
    },
    {
       "id": 2,
@@ -22,7 +36,12 @@
       "role": "usuario",
       "addressID": 2,
       "dni": 40111222,
-      "phoneNumber": "11-43219876"
+      "phoneNumber": "11-43219876",
+      "favourites": [
+         {
+            "name": "Limpiador Aromatizante Suavidad de algodón"
+         }
+      ]
    },
    {
       "id": 3,
@@ -34,7 +53,15 @@
       "role": "ADMIN",
       "addressID": 3,
       "dni": 40111222,
-      "phoneNumber": "11-43219876"
+      "phoneNumber": "11-43219876",
+      "favourites": [
+         {
+            "name": "Cif Gatillo Limpiador Vidrios y Superficies Delicadas"
+         },
+         {
+            "name": "Saphirus Textil Flores Silvestres"
+         }
+      ]
    },
    {
       "id": 4,
@@ -42,11 +69,25 @@
       "surname": "Maciel",
       "email": "lucasmaciel17ynine@gmail.com",
       "password": "$2a$12$ozNwn3ErV/sl7bcoo0p.zeI3vBJWJ1dAyqWAmwBvPK0M4tjjCDOMC",
-      "avatar": "avatar-default.png",
+      "avatar": "1715708847506- user -800166870.jpeg",
       "role": "usuario",
       "addressID": 4,
       "dni": 40111222,
-      "phoneNumber": "11-43219876"
+      "phoneNumber": "11-43219876",
+      "favourites": [
+         {
+            "name": "Cif Gatillo Limpiador Vidrios y Superficies Delicadas"
+         },
+         {
+            "name": "Saphirus Textil Flores Silvestres"
+         },
+         {
+            "name": "Detergente If"
+         },
+         {
+            "name": "Limpiador Aromatizante Suavidad de algodón"
+         }
+      ]
    },
    {
       "id": 5,
@@ -58,18 +99,24 @@
       "role": "usuario",
       "addressID": 5,
       "dni": 40111222,
-      "phoneNumber": "11-43219876"
-   }, 
+      "phoneNumber": "11-43219876",
+      "favourites": [
+         {}
+      ]
+   },
    {
       "id": 6,
-      "name": "Perfil",
-      "surname": "Admin",
+      "name": "Admin",
+      "surname": "ADMIN",
       "email": "admin.acount@gmail.com",
       "password": "$2a$12$ozNwn3ErV/sl7bcoo0p.zeI3vBJWJ1dAyqWAmwBvPK0M4tjjCDOMC",
-      "avatar": "avatar-default.png",
+      "avatar": "1715713309762- user -999728454.jpg",
       "role": "ADMIN",
       "addressID": 4,
       "dni": 40111222,
-      "phoneNumber": "11-43219876"
+      "phoneNumber": "11-43219876",
+      "favourites": [
+         {}
+      ]
    }
 ]

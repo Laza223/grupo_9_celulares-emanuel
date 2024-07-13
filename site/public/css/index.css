@@ -12,8 +12,28 @@
     }
 }
 
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 .home-main {
-    background-color: white;
+    background-color: #bcd2d9;
 }
 
 .img-tip {
@@ -34,6 +54,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 30px 0px;
 }
 
 .clean-product {
@@ -122,9 +143,6 @@
 }
 
 
-
-
-
 .access-dashboard {
     width: 80px;
     height: 80px;
@@ -173,7 +191,6 @@
 @media (min-width: 768px) {
 
     .section-products {
-        max-width: 1200px;
         margin: auto;
     }
 
@@ -183,10 +200,8 @@
     }
 
     .div-offers {
-        display: flex;
         width: 100%;
         padding: 10px;
-        border-radius: 30px;
     }
 
     .div-offers h5 {
@@ -238,26 +253,44 @@
         font-size: 50px;
     }
 
-    .burguer-icon-fixed i {
+    .whatsapp-icon-fixed i {
         position: fixed;
         bottom: 50px;
         right: 50px;
         height: 80px;
         width: 80px;
-        background-color: var(--turquesa);
+        background-color: #25D366;
         border-radius: 50%;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
         display: flex;
         align-items: center;
         justify-content: center;
-        color: wheat;
+        color: white;
         z-index: 1000;
-        font-size: 30px;
+        font-size: 40px;
         cursor: pointer;
-        transition: background-color 0.5s;
+        transition: background-color 0.5s, transform 0.5s;
     }
 
-    .burguer-icon-fixed i:hover{
-        background-color: var(--azulOscuro);
+    .whatsapp-icon-fixed i:hover {
+        background-color: #128c59;
+        animation: rotate 0.5s ease-in-out;
+        transform: rotate(360deg);
+    }
+
+    .chat-bubble {
+        position: fixed;
+        bottom: 130px;
+        right: 130px;
+        z-index: 1000;
+        font-size: 12px;
+        background-color: beige;
+        color: black;
+        padding: 10px;
+        border-radius: 20px 20px 0px 20px;
+        box-shadow: 1px 1px 10px  #000000;
+        display: none;
+        animation: fade-in 0.5s ease-in-out;
+        font-weight: bold;
     }
 }

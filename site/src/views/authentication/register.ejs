@@ -18,7 +18,9 @@
                                 <input type="text" name='name'>
                                 <p class="text-danger-error errName"></p>
                                 <% if (locals.errors) { %>
-                                    <p class="text-danger-error"><%= locals.errors?.name?.msg %></p>
+                                    <p class="text-danger-error">
+                                        <%= locals.errors?.name?.msg %>
+                                    </p>
                                     <% }%>
 
                             </div>
@@ -26,7 +28,9 @@
                                 <label for="#">Apellido</label>
                                 <input type="text" name='surname'>
                                 <% if (locals.errors) { %>
-                                    <p class="text-danger-error"><%= locals.errors?.surname?.msg %></p>
+                                    <p class="text-danger-error">
+                                        <%= locals.errors?.surname?.msg %>
+                                    </p>
                                     <% } else {%>
                                         <p class="text-danger-error errSurName"></p>
                                         <% } %>
