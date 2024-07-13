@@ -2,10 +2,7 @@ const db = require("../../db/models");
 
 module.exports = async (req, res) => {
     try {
-        const orders = await db.Order.findAll({
-            include: "users"
-
-          })
+        const orders = await db.Order.findAll()
     console.log(orders)
         
 

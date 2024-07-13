@@ -25,7 +25,7 @@
                 <th scope="col">Usuario</th>
                 <th scope="col">Email</th>
                 <th scope="col">Rol</th>
-                <th scope="col"></th>
+                <th scope="col">Proveedor</th>
                 <th scope="col"></th>
               </tr>
             </thead>
@@ -44,11 +44,15 @@
                     <%= user.role.name %>
                   </td>
                   <td scope="row">
-                    
+               
+                      <%= user.provider ? user.provider : "Cuenta nativa" %></a>
+
                   </td>
                   <td scope="row">
                     <a href="/admin/dashboard/usuarios/<%= user.id %>" class="btn btn-success">Detalles</a>
                   </td>
+                
+               
                
               
                

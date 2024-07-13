@@ -8,6 +8,7 @@
     "db:reset": "sequelize db:drop & sequelize db:create & sequelize db:migrate & sequelize db:seed:all"
   },
   "dependencies": {
+    "@google-cloud/recaptcha-enterprise": "^5.10.0",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.2",
     "concurrently": "^8.2.2",
