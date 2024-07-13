@@ -13,21 +13,51 @@
                         <div>
                             <label for="name" class="form-label">Nombre:</label>
                             <input type="text" id="name" name="name" class="form-control" value="<%= user.name %>">
+<<<<<<< HEAD
+                            <% if(locals.errors){ %>
+                                <p class="text-danger-error">
+                                    <%= locals?.errors?.name?.msg %>
+                                </p>
+                                <% } else {%>
+                                    <p class="text-danger-error errName"></p>
+                                <% } %>
+=======
                                 <p class="text-danger"><%= locals.errors?.name?.msg %></p>
+>>>>>>> 40fd05b4d5fd6da8eb82be2c7a7a3d182f073951
                         </div>
 
                         <div>
                             <label for="surname" class="form-label">Apellido:</label>
                             <input type="text" id="surname" name="surname" class="form-control"
                                 value="<%= user.surname %>">
+<<<<<<< HEAD
+                            <% if(locals.errors){ %>
+                                <p class="text-danger-error">
+                                    <%= locals?.errors?.surname?.msg %>
+                                </p>
+                                <% } else {%>
+                                    <p class="text-danger-error errSurName"></p>
+                                <% } %>
+=======
                                 <p class="text-danger"><%= locals.errors?.surname?.msg %></p>
+>>>>>>> 40fd05b4d5fd6da8eb82be2c7a7a3d182f073951
                         </div>
 
                         <div>
                             <label for="phoneNumber" class="form-label">Teléfono:</label>
                             <input type="tel" id="phoneNumber" name="phoneNumber" class="form-control"
                                 value="<%= user.phoneNumber %>">
+<<<<<<< HEAD
+                            <% if(locals.errors){ %>
+                                <p class="text-danger-error">
+                                    <%= locals?.errors?.phoneNumber?.msg %>
+                                </p>
+                                <% } else {%>
+                                    <p class="text-danger-error errPhone"></p>
+                                <% } %>
+=======
                                 <p class="text-danger"><%= locals.errors?.phoneNumber?.msg %></p>
+>>>>>>> 40fd05b4d5fd6da8eb82be2c7a7a3d182f073951
                         </div>
                     </div>
                     <div class="container-file-old-new">
