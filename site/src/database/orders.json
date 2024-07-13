@@ -19,11 +19,27 @@
         "id": 2,
         "total": 2500,
         "user": "rodrigo10ruiz@hotmail.com",
-        "state": "pending",
+        "state": "completed",
         "products": [
             {
                 "name": "Saphirus Textil Flores Silvestres",
                 "quantity": 1
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "total": 9000,
+        "user": "rodrigo10ruiz@hotmail.com",
+        "state": "canceled",
+        "products": [
+            {
+                "name": "Saphirus Textil Flores Silvestres",
+                "quantity": 1
+            },
+            {
+                "name": "Cif Gatillo Limpiador Vidrios y Superficies Delicadas",
+                "quantity": 3
             }
         ]
     }

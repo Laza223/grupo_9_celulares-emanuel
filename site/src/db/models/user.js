@@ -21,8 +21,7 @@ module.exports = (sequelize, DataTypes) => {
         as: 'address'
       })
       User.hasMany(models.Order, {
-        foreignKey: 'userId',
-        as: 'orders'
+        foreignKey: 'userId'
       })
     }
   }
