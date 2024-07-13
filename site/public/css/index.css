@@ -227,6 +227,24 @@
         color: white;
         text-decoration: none;
     }
+
+    .carousel-control-next {
+        height: 100% !important;
+    }
+
+    .carousel-control-next:hover {
+        background: linear-gradient(to right, rgba(25, 0, 0, 0.1), rgba(0, 0, 0, 1));
+        border-radius: 50px 0px 0px 50px;
+    }
+
+    .carousel-control-prev {
+        height: 100% !important;
+    }
+
+    .carousel-control-prev:hover {
+        background: linear-gradient(to left, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1));
+        border-radius: 0px 50px 50px 0px;
+    }
 }
 
 @media (min-width: 1024px) {

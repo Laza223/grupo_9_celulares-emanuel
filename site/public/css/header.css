@@ -5,7 +5,7 @@
 
 
 header .logo-ubicacion {
-    background-color: white;
+    background: linear-gradient(to top, var(--turquesa), rgb(255, 255, 255));
     display: flex;
     justify-content: space-between;
     padding: 5px;
@@ -25,6 +25,7 @@ header .logo-ubicacion {
 .user-button {
     width: 40px;
     height: 40px;
+    background-color: transparent;
     color: gray;
     font-size: 24px;
     border: none;
@@ -34,7 +35,8 @@ header .logo-ubicacion {
     justify-content: center;
 }
 
-.user-button i {}
+.user-button i {
+}
 
 .div-button a {
     text-decoration: none;
