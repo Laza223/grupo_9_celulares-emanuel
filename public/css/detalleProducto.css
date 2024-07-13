@@ -1,0 +1,123 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.div-fondo {
+    background-color: white;
+    width: 100%;
+    max-width: 750px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.card-container {
+    width: 90%;
+    background-color: white;
+    height: max-content;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+.card-container h2 {
+    background-color: #203C58;
+    color: white;
+    font-size: 22px;
+    padding: 10px;
+    text-align: center;
+}
+
+.div-img {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    max-height: 450px;
+}
+
+.div-img img {
+    width: 60%;
+}
+
+.card-container b {
+    font-weight: 600;
+    font-size: 20px;
+    font-family: sans-serif;
+    padding: 10px;
+}
+
+.card-container h5 {
+    font-weight: 600;
+    font-size: 26px;
+    font-family: sans-serif;
+    padding: 10px;
+    margin: initial;
+}
+
+.card-container p {
+    font-size: 16px;
+    font-weight: lighter;
+    font-family: sans-serif;
+    padding: 10px;
+    margin: initial;
+}
+
+.div-cantidad {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.card-container .cantidad {
+    border-radius: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.cart-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.agregar {
+    background-color: #FF8541;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.carrito {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.agregar i {
+    font-size: 30px;
+    color: lightgrey;
+}
+
+
+
+.home-main2 {
+    /* background-color: lightgray; */
+}
+

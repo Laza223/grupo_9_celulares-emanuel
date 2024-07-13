@@ -1,0 +1,254 @@
+header .logo-ubicacion{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+}
+img{
+    width: 130px}
+
+header .fa-location-dot{
+    position: relative;
+    margin-right: 20px;
+    color: rgb(54, 179, 91);
+}
+   
+header .seccion-nav-bar{ background-color: var(--turquesa);
+    padding:7px ;
+    height: 30px;
+}
+
+header .barra-busqueda{ 
+     display: flex;
+    position: relative;
+    justify-content: center;
+    color: white;
+}
+    header form input{  
+       display: none;
+    }
+    .iconos .fa-user {
+        display: none;
+    }
+    .iconos li{
+        display: none;
+    }
+
+    .iconos .fa-bell{
+        margin-right: 5px;
+}
+    .iconos p{display: none;
+        
+    }
+    .iconos{  display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        position: relative;
+        bottom: 20px;
+        color: white;
+        gap: 10px;
+        margin-right: 15px;
+    }
+.burguer-menu{
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    bottom: 35px;
+    color: white;
+}
+  .menu-lista{
+    display:none
+  } 
+  .div-header-a{
+    display: none;
+  }
+  @media (min-width:768px )
+    {
+        header .logo-ubicacion{
+            padding: 10px;}
+
+   img{
+    width: 200px}
+
+
+ header .fa-location-dot{
+    margin-right: 40px;
+ }
+ header .seccion-nav-bar{
+padding: 17px;
+ }
+
+ header .barra-busqueda{ display: flex;
+    justify-content: flex-start;
+    bottom: 1px;
+    position: relative;
+    right: 30px;
+    margin-left: 30px;
+}
+
+ header form input{
+    display: flex;
+    border-radius: 15px;
+    border: none;
+    padding: 10px;
+    width: 300px;
+
+}
+.lupa{font-size: 20px;}
+
+header .barra-busqueda form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+ 
+    
+
+ .iconos .fa-user{ display: flex;
+    margin-left: 10px;
+    }
+.iconos li{
+    display: flex;
+}
+
+.burguer-menu{display: none;}
+
+.iconos{
+    align-items: flex-end;
+    bottom: 50px;
+    font-size: 14px;
+    bottom: 38px;}
+
+.iconos li a{
+    font-size: 10px;
+text-decoration: none;
+list-style: none;
+font-weight: bold;
+    color: white;
+    cursor: pointer;
+margin-right: 4px;}
+
+ .iconos li a:hover{
+    color: rgb(200, 197, 197)
+ }
+ .menu-lista{ 
+    list-style: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 8px;
+    background-color: var(--azulOscuro);
+    margin: 0;
+    justify-content: flex-start;
+    gap: 30px;
+
+}
+.categorias{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;}
+
+.menu-lista li a{ 
+    text-decoration: none;
+    color: white;
+    padding: 0px;
+    display: block;
+    font-size: 9px;}
+
+.menu-lista li{display: inline-block;
+        text-align: center;
+         color: white;
+         font-size: 10px;
+}
+.menu-lista li a:hover{
+    background:rgb(173, 171, 171) ;
+
+}
+.div-header-a{
+    border: 1px solid var(--verde);
+    border-top-left-radius: 12px;
+    background-color:var(--verde);
+    font-size: 10px;
+    width: 20%;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;}
+    
+    .div-header-a a{
+        font-weight: bold;
+        color: white;
+        font-size: 8px;
+    }
+
+
+
+
+
+
+
+}
+@media(min-width:1024px){
+    header .logo-ubicacion{
+        padding: 12px;}
+
+    header .fa-location-dot{
+        margin-right: 120px;
+}
+header .fa-location-dot{
+    font-size: 30px;
+}
+header .seccion-nav-bar{
+    padding: 35px;
+}
+
+header .barra-busqueda{
+    display: flex;
+    align-items: flex-start ;
+    
+}
+header form input{
+    width: 500px;
+    padding: 15px;
+
+}
+.lupa{font-size: 30px;
+
+}
+.iconos{
+    font-size: 25px;
+    justify-content: flex-end;
+}
+.iconos li a{
+    font-size: 18px;}
+
+
+ .menu-lista{ 
+    display: flex;
+    padding: 10px;
+    gap: 55px;
+}
+.menu-lista li a{ 
+    display: block;
+    font-size: 13px;
+
+
+}
+.div-header-a{
+    font-size: 12px;
+    width: 25%;
+    height: 50px;
+    display: flex;}
+
+    .div-header-a a{
+        font-weight: bold;
+        color: white;
+        font-size: 15px;
+    }
+}
