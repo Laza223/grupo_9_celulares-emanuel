@@ -1,7 +1,9 @@
 import React, { useEffect, useState, useContext } from 'react'
 import { GlobalContext } from '../../contexts/globalContext'
 
-function ProductCardCart({ name, price, categoryId, quantity, img, id }) {
+function ProductCardCart({ name, price, categoryId, quantity, img, id, user }) {
+
+    console.log(user);
 
     const [categorys, setCategorys] = useState([]);
     const { cartData, fetchCartData } = useContext(GlobalContext)
@@ -20,22 +22,22 @@ function ProductCardCart({ name, price, categoryId, quantity, img, id }) {
     const categoryFind = categorys.find(c => c.id == categoryId)
 
     const handleClickRemove = (id) => {
-        fetch(`http://localhost:3030/api/cart/remove/${id}?userId=2`, { method: 'PATCH' })
+        fetch(`http://localhost:3030/api/cart/remove/${id}?userId=${user.id}`, { method: 'PATCH' })
             .then(response => response.json())
-            .then(data => fetchCartData())
+            .then(data => fetchCartData(user.id))
     }
 
     const handleClickMoreQuantity = (id) => {
-        fetch(`http://localhost:3030/api/cart/more/${id}?userId=2`, { method: 'PATCH' })
+        fetch(`http://localhost:3030/api/cart/more/${id}?userId=${user.id}`, { method: 'PATCH' })
             .then(response => response.json())
-            .then(data => fetchCartData())
+            .then(data => fetchCartData(user.id))
 
     }
 
     const handleClickLessQuantity = (id) => {
-        fetch(`http://localhost:3030/api/cart/less/${id}?userId=2`, { method: 'PATCH' })
+        fetch(`http://localhost:3030/api/cart/less/${id}?userId=${user.id}`, { method: 'PATCH' })
             .then(response => response.json())
-            .then(data => fetchCartData())
+            .then(data => fetchCartData(user.id))
     }
 
     // console.log(categoryFind);

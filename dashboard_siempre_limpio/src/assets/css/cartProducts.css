@@ -21,6 +21,22 @@ body {
     box-shadow: 7px 7px 30px -16px rgba(0, 0, 0, 1);
 }
 
+.cartErrorAuth {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.cartErrorAuth a {
+    text-decoration: underline;
+    color: blue;
+    padding: 5px;
+    border-radius: 8px;
+    font-size: 30px;
+}
+
 .headerCart {
     display: flex;
     justify-content: space-between;
