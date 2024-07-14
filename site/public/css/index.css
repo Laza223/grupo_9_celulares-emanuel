@@ -221,6 +221,10 @@
 
 @media (min-width: 1024px) {
 
+    .imgCarousel {
+        width: 100%;
+    }
+
     .div-offers {
         overflow: hidden;
         width: 100%;
