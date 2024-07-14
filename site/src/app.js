@@ -6,7 +6,9 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const passport = require("passport")
+
 const { configServiceLogInGoogle } = require("./service/google.service");
+const { configServiceLogInFacebook } = require("./service/facebook.service");
 
 
 const methodOverride = require('method-override');  //PUT Y DELETE HABILITADO
@@ -36,6 +38,7 @@ const { log } = require('console');
 
 var app = express();
 configServiceLogInGoogle();
+configServiceLogInFacebook();
 
 
 var app = express();
@@ -68,6 +71,8 @@ app.use(insertDataLocalsMsgRegister)
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
+
+
 /* ENRUTADORES */
 app.use("/", homeRoutes);
 app.use("/authentication", authRoutes);
@@ -79,7 +84,7 @@ app.use("/api", apiRoutes);
 app.use("/api/cart", cartApiRoutes)
 app.use("/api/auth", apiAuthRoutes)
 
-http://localhost:3030/iniciar/authentication/google/callback
+
 app.use((req,res, next) => {
   res.status(404).render("error")
 })

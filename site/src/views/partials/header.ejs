@@ -6,7 +6,7 @@
       <% if (!locals.userLogin) { %>
         <div class="div-button">
           <a href="/authentication">
-            <h3>Ingresar</h3>
+            <h3 class="titulo-ingresar">Ingresar</h3>
             <a href="/authentication" class="button-a">
               <button class="user-button"><i class="fa-solid fa-user-large"></i>
               </button>
@@ -18,7 +18,7 @@
             <label for="active-perfil-tarjet" id="label-text">Perfil</label>
             <input type="checkbox" id="active-perfil-tarjet" class="apt">
             <div class="perfil-box-container">
-              <div class="avatar-img"> <img src="<%= /http/.test(user.avatar) ? user.avatar : "/images/users/" + user.avatar%>"alt=""></div>
+              <div class="avatar-img"> <img src="<%= /http/.test(user.avatar) ? user.avatar : `/images/users/${user.avatar}`%>"alt=""></div>
               <div class="user-info">
                 <h2 class="user-name-info">
                   <%= user.name + " " + user.surname %>
@@ -49,7 +49,7 @@
             <div class="div-button">
               <h3>Carrito</h3>
 
-              <a href="/carrito" class="button-a">
+              <a href="#" class="button-a">
                 <button class="user-button"><i class="fa-solid fa-cart-shopping"></i>
                 </button>
               </a>

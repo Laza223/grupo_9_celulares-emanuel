@@ -7,7 +7,7 @@ module.exports = async (req, res) => {
     } = req.session.passport;
 
     const { sub, given_name, family_name, picture, email } = _json;
- 
+
     const [user, _] = await db.User.findOrCreate({
       where:{
         socialId: sub

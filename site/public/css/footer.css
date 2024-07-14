@@ -243,8 +243,10 @@
   .wrapper .instagram:hover .tooltip:before{
     background: #e1306c;
   }
-  
-  
+
+  .footer-content pt-5 pb-5{
+    
+  }
 
 @media (max-width:460px) {
     .contacto {

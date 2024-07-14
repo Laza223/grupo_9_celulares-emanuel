@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("../partials/head", { title: "Productos en database" }) %>
+
+
+
+    <body class="dashboard-body">
+        <%- include("./navBar") %>
+            <main class="admin-main-list">
+                <div class="admin-header-list">
+                    <div class="admin-header-list-title">
+                        <h3></h3>
+                        <h2>Ordenes</h2>
+                    </div>
+                </div>
+
+                <table class="table table-borderless table-hover " id="table-search-admin">
+                    <thead class=" table-dark">
+                        <tr>
+                            <th>ID de Orden</th>
+                            <th>Total</th>
+                            <th>ID de Usuario</th>
+                            <th>Estado</th>
+                            <th>Fecha de Creación</th>
+                            <th>Última Actualización</th>
+                            <th>Detalles</th>
+                        
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% orders.forEach(order=> { %>
+                            <tr>
+                                <td>
+                                    <%= order.id %>
+                                </td>
+                                <td>
+                                    <%= order.total %>
+                                </td>
+                                <td>
+                                    <%= order.userId %>
+                                </td>
+                                <td>
+                                    <button class="<%= 
+                                        (order.state === "pending") ? "btn btn-warning" :
+                                        (order.state === "completed") ? "btn btn-success" :
+                                        (order.state === "canceled") ? "btn btn-secondary" :
+                                        "btn btn-secondary" 
+                                    %>"> <%= order.state %></button>
+                                </td>
+                                
+                                <td>
+                                    <%= order.createdAt.toLocaleString() %>
+                                </td>
+                                <td>
+                                    <%= order.updatedAt.toLocaleString() %>
+                                </td>
+                                <td>
+                          
+                                    <a href="/admin/dashboard/ordenes/<%= order.id %>" class="btn btn-success">Detalles</a>
+                                </td>
+                            </tr>
+                            <% }); %>
+
+
+                    </tbody>
+
+
+                </table>
+
+            </main>
+
+
+            <%- include("../partials/scripts") %>
+
+    </body>
+
+</html>
