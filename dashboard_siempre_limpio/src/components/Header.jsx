@@ -38,12 +38,18 @@ function Header({ user }) {
                     </>
                     :
                     <>
+                        {user.roleId == 2 ?
+                            <Link to={"/admin"} style={{ display: "flex", alignItems: "center" }}>
+                                <span>Panel Admin</span>
+                            </Link>
+                            : ""}
                         <Link style={{ display: "flex", alignItems: "center" }}>
                             <i className="fa-solid fa-circle" style={{ color: "limegreen", fontSize: "14px" }}></i>
                             <span>{user.name}</span>
                         </Link>
-                        <Link onClick={logout}>
+                        <Link onClick={logout} style={{display: "flex", alignItems: "center"}}>
                             <i className="fa-solid fa-right-from-bracket"></i>
+                            <h5 style={{padding: "5px", margin: "initial"}}>Salir</h5>
                         </Link>
                         <Link to="/carrito">
                             <i className="fa-solid fa-cart-shopping"></i>
