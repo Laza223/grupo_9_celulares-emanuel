@@ -2,7 +2,9 @@
     margin-left: 60px;
     margin-bottom: 20px;
 }
-
+#img-orders-admin{
+    width: 100px;
+}
 #admin-user-info{
     display: flex;
     margin-bottom: 140px;
@@ -13,6 +15,15 @@
     border-radius: 20px;
     padding: 30px;
 }
+
+#order-detail-head{
+    position: absolute;
+    right: 0;
+}
+.img-product-admin {
+    max-width: 100px; 
+    height: auto; 
+  }
 
 #admin-user-info form{
     width: 30%;

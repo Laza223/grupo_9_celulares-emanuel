@@ -11,7 +11,20 @@ module.exports = async (req, res) => {
     let user = null;
     if (req.session.userLogin) {
       const { id } = req.session.userLogin;
-      user = await db.User.findByPk(id, { include: "address" });
+      user = await db.User.findByPk(id, {
+        include: [
+          {
+            model: db.Address,
+            as: "address",
+
+          },
+          {
+            model: db.Product,
+            as: "favorites",
+            attributes: ["id", "name", "price", "image"]
+          }
+        ]
+      })
     }
 
     res.render("products/productsByCategory", { user, products, categories });

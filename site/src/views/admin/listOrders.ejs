@@ -14,12 +14,12 @@
                     </div>
                 </div>
 
-                <table class="table table-borderless table-hover " id="table-search-admin">
+                <table class="table table-borderless table-hover " id="table-orders">
                     <thead class=" table-dark">
                         <tr>
                             <th>ID de Orden</th>
                             <th>Total</th>
-                            <th>ID de Usuario</th>
+                            <th>Usuario</th>
                             <th>Estado</th>
                             <th>Fecha de Creación</th>
                             <th>Última Actualización</th>
@@ -34,10 +34,10 @@
                                     <%= order.id %>
                                 </td>
                                 <td>
-                                    <%= order.total %>
+                                     <%= order.total.toLocaleString('es-AR', { style: 'currency', currency: 'ARS' })%>
                                 </td>
                                 <td>
-                                    <%= order.userId %>
+                                    <%= order.user.name %> <%= order.user.surname %>
                                 </td>
                                 <td>
                                     <button class="<%= 
@@ -66,12 +66,10 @@
 
 
                 </table>
-
-            </main>
+              
+-*            </main>
 
 
             <%- include("../partials/scripts") %>
 
     </body>
-
-</html>

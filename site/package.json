@@ -11,6 +11,7 @@
     "@google-cloud/recaptcha-enterprise": "^5.10.0",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.2",
+    "chart.js": "^4.4.3",
     "concurrently": "^8.2.2",
     "cookie-parser": "~1.4.4",
     "cors": "^2.8.5",
@@ -36,6 +37,7 @@
     "passport-google-oauth": "^2.0.0",
     "sequelize": "^6.37.3",
     "sequelize-cli": "^6.6.2",
-    "sequelize-paginate": "^1.1.6"
+    "sequelize-paginate": "^1.1.6",
+    "toastify-js": "^1.12.0"
   }
 }

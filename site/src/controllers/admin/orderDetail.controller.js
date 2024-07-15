@@ -1,3 +1,4 @@
+const { Association } = require("sequelize");
 const db = require("../../db/models");
 
 module.exports = async (req, res) => {
@@ -5,9 +6,22 @@ module.exports = async (req, res) => {
 
         const {id} = req.params
         const order = await db.Order.findByPk(id, {
-          
+            include: [
+                {
+                    model: db.Product,
+                    as: "products",
+                    through: {
+                        model: db.Orderproduct,
+                        as: "orderProducts"
+                    }
+                },
+                {
+                    model: db.User,
+                    as: "user"
+                }
+            ]
         })
-        console.log(order)
+        
        return res.render("admin/detailOrder", { order})
     } catch (error) {
         console.error("Error al obtener la órden:", error);

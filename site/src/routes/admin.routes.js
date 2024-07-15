@@ -16,7 +16,7 @@ router.get("/dashboard/usuarios/:id", checkAdmin, adminController.userDetail)
 router.put("/dashboard/usuarios/:id", checkAdmin, adminController.userEdit)
 
 router.get("/dashboard/ordenes", checkAdmin, adminController.orderList);
-router.get("/dashboard/ordenes/:id", adminController.orderDetail);
+router.get("/dashboard/ordenes/:id",checkAdmin, adminController.orderDetail);
 
 router.get("/dashboard/editar/:id", checkAdmin, adminController.edit);
 router.put("/dashboard/editar/:id", checkAdmin, uploadProducts.single( "imageProduct"), productsValidation,  adminController.update)

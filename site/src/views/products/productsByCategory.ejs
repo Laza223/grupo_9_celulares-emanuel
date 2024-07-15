@@ -16,6 +16,14 @@
 
                         <% products.forEach(product=> { %>
                             <div class="product-card">
+                              <button class="add-to-favorites" data-product-id="<%= product.id %>" <%= !locals.userLogin ? "disabled" : "" %>>
+                                <% if (user && user.favorites) { %>
+                                  <% const isFavorite = user.favorites.some(favorite => favorite.id === product.id); %>
+                                  <i class="fa <%= isFavorite ? 'fa-solid fa-heart' : 'fa-regular fa-heart' %>"></i>
+                                <% } else { %>
+                                  <i class="fa fa-regular fa-heart "></i>
+                                <% } %>
+                              </button>
                                 <div class="product-image">
                                     <img src="/images/products/<%= product.image%>" alt="<%= product.name%>">
                                 </div>
@@ -28,8 +36,11 @@
                                     </div>
                                     <div class="product-actions">
                                         <a href="/productos/detalle/<%= product.id%>" class="view-product">Ver Producto</a>
-                                        <a href="/productos/detalle/<%= product.id%>" class="add-to-cart">Agregar al carrito</a>
+                                        <button href="#" class="add-to-cart" data-product-id="<%= product.id %>" disabled>Agregar al carrito</button>
                                     </div>
+                                   
+                                    
+                                    
                                 </div>
                             </div>
                             <% }) %>

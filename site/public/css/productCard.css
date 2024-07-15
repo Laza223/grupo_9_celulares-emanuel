@@ -11,6 +11,10 @@
     background-color: white;
 }
 
+.add-to-favorites{
+    border: 0px;
+  
+}
 .product-card .product-title {
     font-weight: 700;
     font-family: serif !important;

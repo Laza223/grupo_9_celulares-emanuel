@@ -1,10 +1,34 @@
-const express = require("express");
-const router = express.Router();
-const path = require("path")
-const cartController = require("../controllers/cart")
+const router = require('express').Router();
 
-// "/carrito"    
-router.get("/",cartController.getCart)  
+const { canceledOrder,
+    completedOrder,
+    getOrder,
+    addProductToOrder,
+    removeProductOrder,
+    moreQuantity,
+    lessQuantity,
+    clearProductsCart } = require('../controllers/cart');
 
+
+
+// /carrito
+
+router.get('/', getOrder);
+
+router.patch('/agregar-producto/:id', addProductToOrder);
+
+router.patch('/remover-producto/:id', removeProductOrder);
+
+router.patch('/incrementar/:id', moreQuantity);
+
+router.patch('/decrementar/:id', lessQuantity);
+
+router.patch('/cancelar', canceledOrder);
+
+router.patch('/completar', completedOrder)
+
+router.patch('/vaciar', clearProductsCart)
+
+// router.patch('/complete' );
 
 module.exports = router;

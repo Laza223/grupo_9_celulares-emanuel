@@ -15,9 +15,25 @@
 
 }
 
+#dt-search-0{
+    background-color:whitesmoke
+}
+
+#table-users{
+    display: block;
+}
 
 
 
+.dt-paging-button{
+    width: 300px;
+    background-color: cornflowerblue;
+}
+
+
+.dt-info {
+    display: none;
+}
 .admin-main-list {
     font-family: "roboto, sans-serif";
     padding: 30px;
