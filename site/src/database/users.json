@@ -12,18 +12,7 @@
       "dni": 40111222,
       "phoneNumber": "11-43219876",
       "favourites": [
-         {
-            "name": "Cif Gatillo Limpiador Vidrios y Superficies Delicadas"
-         },
-         {
-            "name": "Saphirus Textil Flores Silvestres"
-         },
-         {
-            "name": "Detergente If"
-         },
-         {
-            "name": "Limpiador Aromatizante Suavidad de algodón"
-         }
+      
       ]
    },
    {
@@ -101,7 +90,7 @@
       "dni": 40111222,
       "phoneNumber": "11-43219876",
       "favourites": [
-         {}
+        
       ]
    },
    {
@@ -116,7 +105,7 @@
       "dni": 40111222,
       "phoneNumber": "11-43219876",
       "favourites": [
-         {}
+         
       ]
    }
 ]

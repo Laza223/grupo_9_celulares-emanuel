@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+/* document.addEventListener('DOMContentLoaded', function() {
     let roleSelect = document.getElementById('inputState')
 
     roleSelect.addEventListener('change', function() {
@@ -10,4 +10,4 @@ document.addEventListener('DOMContentLoaded', function() {
   })
   
 
-  
+   */

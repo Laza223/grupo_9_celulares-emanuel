@@ -30,12 +30,12 @@
             </a>
         <% } %>
         <a href="/admin/dashboard/crear"> <button type="button" class="btn btn-outline-success">Crear producto</button></a>
-          <input type="text" id="input-search-admin" placeholder="Buscar" >
+        
           
       </div>
           </div>
         
-          <table class="table table-borderless table-hover" id="table-search-admin">
+          <table class="table table-borderless table-hover" id="table-products">
             <thead class=" table-dark">
               <tr>
                 <th scope="col"> <strong class="toUpperCase">id</strong></th>
@@ -64,7 +64,7 @@
                   <td>$<%= producto.price %>
                   </td>
                   <td>
-                    <%= producto.stock %>
+                    <%= producto.quantity %>
                   </td>
                   <td>
                     <%= producto.category.name %>
@@ -82,7 +82,7 @@
                       </td>
                       
                         <td><form action="/admin/dashboard/restaurar/<%= producto.id %>?_method=PUT" method="post">
-                          <button type="submit" href="/admin/dashboard/restaurar/<%= producto.id %>" class="btn btn-success" >Restaurar</a>
+                          <button type="submit" href="/admin/dashboard/restaurar/<%= producto.id %>" class="btn btn-success" id="button-admin-list" >Restaurar</a>
                           </form>
                         </td>
                          

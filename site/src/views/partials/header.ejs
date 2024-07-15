@@ -18,7 +18,7 @@
             <label for="active-perfil-tarjet" id="label-text">Perfil</label>
             <input type="checkbox" id="active-perfil-tarjet" class="apt">
             <div class="perfil-box-container">
-              <div class="avatar-img"> <img src="<%= /http/.test(user.avatar) ? user.avatar : `/images/users/${user.avatar}`%>"alt=""></div>
+              <div class="avatar-img"> <img src="<%= /http/.test(user.avatar) ? user.avatar : "/images/users/" + user.avatar%>"alt=""></div>
               <div class="user-info">
                 <h2 class="user-name-info">
                   <%= user.name + " " + user.surname %>
@@ -35,6 +35,7 @@
               <div class="action-buttons">
                 <% if (locals.userLogin?.roleAdmin===true) { %>
                   <a href="/admin/dashboard/productos">Panel Admin</a>
+               
                   <% } else { %>
                     <a href="/perfil">Ver Perfil</a>
                     <% } %>

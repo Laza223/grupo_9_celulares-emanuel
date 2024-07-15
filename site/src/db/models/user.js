@@ -16,13 +16,21 @@ module.exports = (sequelize, DataTypes) => {
         foreignKey: "roleId",
         as: "role"
       }),
-      User.belongsTo(models.Address,{
-        foreignKey: 'addressId',
-        as: 'address'
-      })
+        User.belongsTo(models.Address, {
+          foreignKey: 'addressId',
+          as: 'address'
+        })
       User.hasMany(models.Order, {
-        foreignKey: 'userId'
+        foreignKey: 'userId',
+        as: 'orders'
       })
+
+      User.belongsToMany(models.Product, {
+        through: "userproducts",
+        foreignKey: "userId", 
+        otherKey: "productId", 
+        as: "favorites" 
+      });
     }
   }
   User.init({

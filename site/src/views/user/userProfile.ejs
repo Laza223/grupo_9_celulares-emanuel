@@ -10,7 +10,7 @@
                 <div class="perfil">
                     <div class="perfil-container">
                         <div class="user-img"> <img src="<%= /http/.test(user.avatar) ? user.avatar : '/images/users/' + user.avatar%>"  alt="" ></div>
-                        <% console.log(user.avatar) %>
+                      
                         <div class="user-info">
                             <h2 class="user-name-info">
                                 <%= user.name + " " + user.surname %>
@@ -48,6 +48,45 @@
                         </div>
                     </div>
                 </div>
+            </div>
+                        <h2 id="favorites-profile">Favoritos</h2>
+                        <div class="favorites-profile">
+                          <% if (user.favorites.length > 0) { %>
+                            <% user.favorites.forEach(favorite => { %>
+                                <div class="product-card">
+                                    <button class="add-to-favorites" data-product-id="<%= favorite.id %>" <%= !locals.userLogin ? "disabled" : "" %>>
+                                      <% if (user && user.favorites) { %>
+                                        <% const isFavorite = user.favorites.some(favorite => favorite.id === favorite.id); %>
+                                        <i class="fa <%= isFavorite ? 'fa-solid fa-heart' : 'fa-regular fa-heart' %>"></i>
+                                      <% } else { %>
+                                        <i class="fa fa-regular fa-heart "></i>
+                                      <% } %>
+                                    </button>
+                                      <div class="product-image">
+                                          <img src="/images/products/<%= favorite.image%>" alt="<%= favorite.name%>">
+                                      </div>
+                                      <div class="product-details">
+                                          <h3 class="product-title"><%= favorite.name%></h3>
+                                          <p class="product-description"><%= favorite.description %></p>
+                                          <div class="product-price">
+                                              <span class="price">$<%= favorite.price %></span>
+                                              <span class="discount">$9999.99</span>
+                                          </div>
+                                          <div class="product-actions">
+                                              <a href="/productos/detalle/<%= favorite.id%>" class="view-product">Ver Producto</a>
+                                              <button href="#" class="add-to-cart" data-product-id="<%= favorite.id %>" disabled>Agregar al carrito</button>
+                                          </div>
+                                         
+                                          
+                                          
+                                      </div>
+                                  </div>
+                           
+                            <% }) %>
+                          <% } else { %>
+                            <p>No tienes productos favoritos.</p>
+                          <% } %>
+</div>                     
             </main>
 
             <%- include("../partials/footer") %>

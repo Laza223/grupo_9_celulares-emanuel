@@ -1,20 +1,22 @@
 const express = require("express");
 const router = express.Router();
-const userController = require("../controllers/user");
+const {profile, edit, update, addFavorite, destroyFavorite} = require("../controllers/user");
 const { uploadUser } = require("../middlewares/uploads");
 const { profileValidation } = require("../middlewares/validations/profile.validation");
 
+
 // /perfil
 
-router.get("/", userController.profile)
+router.get("/", profile)
 
 
-router.get("/editar", userController.edit)
+router.get("/editar", edit)
 router.put("/editar",
      uploadUser.single("avatar", { name: "avatar" }),
      profileValidation,
-     userController.update)
-
+     update)
+router.post("/agregar-favorito/:id", addFavorite)
+router.delete("/remover-favorito/:id", destroyFavorite)
 
 
 
