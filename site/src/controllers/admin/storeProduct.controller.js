@@ -7,7 +7,7 @@ module.exports = async (req, res) => {
 const errors = validationResult(req);
 
 if (errors.isEmpty()) {
-      const { name, price, description, category, stock } = req.body;
+      const { name, price, description, category, stock } = req.body
       const image = req.file.filename ? req.file.filename : "product-default.jpg"
 
       await db.Product
@@ -15,7 +15,7 @@ if (errors.isEmpty()) {
           name: name.trim(),
           price: +price,
           categoryId: +category,
-          stock: +stock,
+          quantity: +stock,
           image: image,
           description: description.trim()
         })

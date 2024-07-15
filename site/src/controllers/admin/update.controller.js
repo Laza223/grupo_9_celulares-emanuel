@@ -7,13 +7,14 @@ try{
 
    if (errors.isEmpty()) { 
 const {name, price, category, stock, description} = req.body
-const image = req.file ? req.file.filename : "product-default.jpg";
+
+const image = req.file.filename ? req.file.filename : (req.body.imageProduct || "product-default.jpg")
    await db.Product.update(
         {
             name: name,
             price: price,
             categoryId: category, 
-            stock: stock,
+            quantity: stock,
             image: image,
             description: description
         },

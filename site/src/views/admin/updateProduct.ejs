@@ -27,7 +27,7 @@
       
       <div class="mb-1 col-6">
         <label for="exampleInputStock" class="form-label">Stock</label>
-        <input name="stock" value="<%= product.stock %>" type="number" class="form-control input-edicion" id="exampleInputStock" required>
+        <input name="stock" value="<%= product.quantity %>" type="number" class="form-control input-edicion" id="exampleInputStock" required>
         <p  class="text-danger">  <% if (locals.errors?.stock) { %>
         <%= locals.errors.stock.msg %>
         <% } %></p>

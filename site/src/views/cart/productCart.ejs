@@ -33,16 +33,31 @@
                     <input type="email" id="correo-electronico" name="correo-electronico" required>
 
                 </form>
+                <div>
+                    <h3>Items</h3>
+                    <% if (order && order.Products) { %>
+                        <% order.Products.forEach( product => { %>
+                            <%= product.name %>
+                             <br>
+                           <%= product.price.toLocaleString('es-AR', { style: 'currency', currency: 'ARS' }) %>
+                             <br>
+                             <br>
+                             <button class="remove-from-cart" data-product-id="<%= product.id %>">Eliminar</button>
+                         <% }) %>
+                    <% } else { %>
+                        <p>No hay productos en el carrito.</p>
+                    <% } %>
 
+                </div>
                 <div class="total_a_pagar">
                     <div id="numero_de_orden">
-                        <p>N° de orden: </p>
+                        <p>N° de orden: <%= order.id %></p>
 
                     </div>
 
 
                     <label>Total a Pagar:</label>
-                    <p id="total_a_pagar_numero">$100.00</p>
+                    <p id="total_a_pagar_numero"><%= order.total %></p>
                     <button type="submit"><i class="fa-solid fa-arrow-right"></i>Pagar</button>
                 </div>
 

@@ -34,7 +34,11 @@
                             </h2>
                             <h2>$ <%= product.price %>
                             </h2>
+<<<<<<< Updated upstream
                             <button class="cart-button" >Agregar al carrito <i
+=======
+                            <button class="cart-button <%= locals.userLogin ? "add-to-cart" : "" %>" data-product-id="<%= product.id %>">Agregar al carrito <i
+>>>>>>> Stashed changes
                                     class="fa-solid fa-cart-shopping"></i></button>
                         </div>
                         <span class="product-description">

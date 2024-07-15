@@ -1,7 +1,6 @@
-const { getTotalOrder } = require('./utility/getTotalOrder.js');
 
 module.exports = {
-    getOrder: require('./getOrder.controller.api.js'),
+    getOrder: require('./getCart.controller.js'),
     addProductToOrder: require('./addProduct.controller.api.js'),
     removeProductOrder: require('./removeProduct.controller.api.js'),
     moreQuantity: require('./moreQuantity.controller.api.js'),
@@ -10,5 +9,6 @@ module.exports = {
     completedOrder: require("./completedOrder.controller.api.js"),
     clearProductsCart: require("./clearProductsCart.controller.api.js"),
     getOrderPending: require("./utility/getOrderPending.js"),
-    getTotalOrder: require("./utility/getTotalOrder.js")
+    getTotalOrder: require("./utility/getTotalOrder.js"),
+    
 }

@@ -3,11 +3,9 @@ const db = require('../../../db/models')
 
 module.exports = async (req, res) => {
 
-    if (!req.session.userLogin){
-        console.log("Debes loguearte para poder agregar productos al carrito")
-        res.redirect("/authentication")
-    }
-    const  userId  = req.session.userLogin
+  if(!req.session.userLogin){return console.log("Debes loguearte para poder sumar productos al carrito");}
+  
+    const  userId  = req.session.userLogin.id
 
     const dataOrder = await db.Order.findOrCreate({
         where: {
@@ -21,11 +19,12 @@ module.exports = async (req, res) => {
             ]
         },
         defaults: {
-            userId: userId
+            userId: userId,
+            state: "pending"
         },
         include: [
             {
-                association: "products",
+                association: "Products",
                 through: {
                     attributes: ["quantity"]
                 }

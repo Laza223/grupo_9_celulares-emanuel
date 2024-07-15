@@ -51,18 +51,21 @@
         
       </div>
 
-      <div class="input-group mb-3 col-6 categorias">
-        <label class="input-group-text" for="inputGroupSelect01">Categorías</label>
+     
+     
+      <div class="mb-3 col-6">
+
+        <label for="inputGroupSelect01" class="form-label">Categoría</label>
         <select class="form-select" id="inputGroupSelect01" name="category" required>
           <% categories.forEach(c => { %>
-            <option value="<%= c.id %>" <%= locals.old?.category == c.id ? 'selected' : '' %>><%= c.name %></option>
+            <option  value="<%= c.id %>"><%= c.name %></option>
           <% }) %>
         </select>
-        <p class="text-danger">  <% if (locals.errors?.category) { %>
-         <%= locals.errors.category.msg %>
+        <p  class="text-danger"> <% if (locals.errors?.category) { %>
+     <%= locals.errors.category.msg %>
         <% } %></p>
-        <hr>
       </div>
+
 
       <div class="botones">
         <button type="submit" class="btn btn-success row gap-3 col-2 boton-crear">Crear producto</button>
