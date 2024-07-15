@@ -29,6 +29,24 @@
                             </nav>
                         </div>
                         <div class="info-product">
+                            <div>
+                                <h2>
+                                    <%= product.name %>
+                                </h2>
+                                <h2>$ <%= product.price %>
+                                </h2>
+                            </div>
+                            <div class="sub-info-product">
+                                <span>Envio a todo Buenos Aires <i class="fa-solid fa-truck"></i></span>
+                                <span class="textGray">Conocé los tiempos y metodos de envio</span>
+                                <span class="textBlue">Calcular cuándo llega</span>
+                                <span class="textBoldd">Stock disponible</span>
+                            </div>
+                            <div>
+                                <button class="cart-button">Comprar ahora</button>
+                                <button class="cart-button">Agregaral carrito <i
+                                        class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
                             <h2>
                                 <%= product.name %>
                             </h2>
@@ -41,7 +59,7 @@
 >>>>>>> Stashed changes
                                     class="fa-solid fa-cart-shopping"></i></button>
                         </div>
-                        <span class="product-description">
+                        <span class="product-description-detail">
                             <h2>Descripcion del producto</h2>
                             <p>
                                 <%= product.description %>
