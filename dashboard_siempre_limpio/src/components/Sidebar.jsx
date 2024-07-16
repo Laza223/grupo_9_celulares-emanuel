@@ -19,6 +19,12 @@ function Sidebar(props) {
 			name: "Usuarios",
 			href: "/admin/users",
 			icon: "fa-solid fa-users"
+		},
+		{
+			name:"Ordenes",
+			href:"/admin/orders",
+			icon: "fa-solid fa-cart-shopping",
+			className: "orderLink" 
 		}
 	]
 
