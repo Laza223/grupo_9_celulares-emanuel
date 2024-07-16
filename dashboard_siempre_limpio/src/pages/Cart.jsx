@@ -29,7 +29,7 @@ function Cart() {
             console.log(user);
             fetchCartData(user.id)
         }
-    }, [user, fetchCartData])
+    }, [user])
 
     if (authFailed) {
         return (

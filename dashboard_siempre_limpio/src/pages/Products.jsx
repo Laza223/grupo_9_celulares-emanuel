@@ -43,6 +43,8 @@ function Products() {
             })
     }, [shouldRefreshProducts]);
 
+    console.log(products);
+
     const prods = products.products || []
 
     function handleButtonDetail(id) {
@@ -76,7 +78,7 @@ function Products() {
         id: p.id,
         name: p.name,
         price: `$ ${p.price}`,
-        stock: p.stock,
+        stock: p.quantity,
         category: p.category.name,
         photo: urlApiImage + p.image
     }))

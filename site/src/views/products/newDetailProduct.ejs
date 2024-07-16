@@ -43,21 +43,17 @@
                                 <span class="textBoldd">Stock disponible</span>
                             </div>
                             <div>
-                                <button class="cart-button">Comprar ahora</button>
-                                <button class="cart-button">Agregaral carrito <i
+                                <button class="cart-button" id="comprarButton">Comprar ahora</button>
+                                <button class="cart-button" id="addCartButton">Agregaral carrito <i
                                         class="fa-solid fa-cart-shopping"></i></button>
                             </div>
-                            <h2>
+                            <!-- <h2>
                                 <%= product.name %>
                             </h2>
                             <h2>$ <%= product.price %>
                             </h2>
-<<<<<<< Updated upstream
                             <button class="cart-button" >Agregar al carrito <i
-=======
-                            <button class="cart-button <%= locals.userLogin ? "add-to-cart" : "" %>" data-product-id="<%= product.id %>">Agregar al carrito <i
->>>>>>> Stashed changes
-                                    class="fa-solid fa-cart-shopping"></i></button>
+                                    class="fa-solid fa-cart-shopping"></i></button> -->
                         </div>
                         <span class="product-description-detail">
                             <h2>Descripcion del producto</h2>
@@ -130,6 +126,13 @@
                 <script>
                     document.getElementById('backButton').addEventListener('click', function () {
                         window.history.back()
+                    })
+
+                    document.getElementById('comprarButton').addEventListener('click', function () {
+                        alert("Producto Comprado")
+                    })
+                    document.getElementById('addCartButton').addEventListener('click', function () {
+                        alert("Producto agregado al carrito")
                     })
                     function cargarfoto(img) {
                         document.getElementById("galeria").src = img;

@@ -118,7 +118,7 @@ function EditProduct() {
                     id="outlined-required"
                     label="Stock"
                     name='stock'
-                    value={product.stock}
+                    value={product.quantity}
                     type="number"
                     sx={{ width: '45%', margin: '2.5%' }}
                     onChange={handleChange}
