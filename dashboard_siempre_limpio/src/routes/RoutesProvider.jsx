@@ -1,12 +1,13 @@
 import { createBrowserRouter, Navigate, RouterProvider } from "react-router-dom";
-import Root from '../pages/Root'
+import Root from '../pages/Root';
 import Dashboard from "../pages/Dashboard";
 import Products from "../pages/Products";
 import EditProduct from '../pages/EditProduct'
 import CreateProduct from '../pages/CreateProduct';
 import Users from "../pages/Users";
-import Home from "../pages/Home"
+import Home from "../pages/Home";
 import Cart from "../pages/Cart";
+import Orders from "../pages/Orders";
 import Authentication from "../pages/Authentication";
 import ProtectedRoute from "../components/middlewareComponents/ProtectedRoute";
 import ErrorAuth from "../pages/ErrorAuth";
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
             {
                 path: "users",
                 element: <Users />
+            },
+            {
+                path: "orders",
+                element: <Orders />
             },
             {
                 // path: "/", colocar direccion de ruta (parte de "/")

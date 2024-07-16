@@ -19,11 +19,12 @@ router.get("/usuarios/:id", apiController.userDetail)
 router.get('/products', apiController.productList);
 router.get('/products/:id', apiController.productDetail);
 router.post('/products/edit', uploadProducts.single("imageProduct"),apiController.editProduct)
-
-// RUTA CATEGORIAS
 router.post('/products/create', uploadProducts.single("imageProduct"), apiController.createProduct)
+router.delete('/products/:id', apiController.deleteProduct)
 
-router.delete('/products/:id', apiController.deleteProduct);
+//RUTAS ORDENES
+router.get("/orders", apiController.orderList)
+router.get("/orders/:id", apiController.orderDetail)
 
 // RUTA CATEGORIAS
 router.get('/categorys', apiController.categorysList)

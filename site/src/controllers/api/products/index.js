@@ -9,7 +9,9 @@ module.exports = {
     editProduct: require("./editProduct.controller"),
     deleteProduct: require("./deleteProduct.controller.js"),
     createProduct: require("./createProduct.controller.js"),
-    favouriteProduct: require("./favouriteProduct.controller.js")
+    favouriteProduct: require("./favouriteProduct.controller.js"),
+    orderList: require("./orderList.controller.js"),
+    orderDetail: require("./orderDetail.controller.js")
 }
 
 
